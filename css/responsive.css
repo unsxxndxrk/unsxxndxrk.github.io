@@ -1,0 +1,206 @@
+/* (1080 x 1920) - 1279 px */
+@media screen and (max-width: 1279px) {
+	/* Hero Section */
+	.header__nike img { left: -130px; }
+
+	/* Features Section */
+	.feature-2 .feature__titles { position: absolute; width: 50%; top: 10px; right: 40px; }
+
+	/* Sale Section */
+	.sale__gallery .sale__item { padding-left: 15px; }
+
+	.sale__item img { width: 90%; left: 5%; }
+	
+	/* Help Section */
+	.help__btn { padding: 10px 30px; }
+
+	/* Testimonials Section */
+	.test__shape i.shape_left { left: 305px; }
+
+	.test__shape i.shape_right { left: 628px; }
+}
+
+/* 993px - 1079 px */
+@media screen and (max-width: 1079px) { .header__nike img { left: -170px; } }
+
+
+/* 768 - 992px */
+@media screen and (max-width: 1023px) {
+	/* Hero Section */
+	.header__nike { display: none; }
+
+	.offer { text-align: center; margin: 70px 0 0 0; }
+
+	.offer__text { margin: 15px auto 30px auto; }
+
+	.nav-item { display: block; }
+
+	.header__pre-nav-wrapper ul li:not(.header__pre-nav-right-item) { display: none; }
+
+	.header__nav { padding: 20px 0; }
+
+	/* Features Section */
+	.features { height: 1250px; }
+
+	.feature-1 { height: 550px; width: 100%; margin: 0 0 30px -10px; }
+
+	.feature-2 { width: 100%; margin: 0; }
+
+	.feature-3 { margin: 0; }
+
+	/* Sale Section */
+	.sale__item img { width: 200px; left: 50%; margin-left: -100px; }
+
+	/* Brands Section */
+	.brand__wrapper { text-align: center; }
+
+	.brand__wrapper img { margin-bottom: 30px; }
+
+	/* Testimonials Section */
+	.test__shape i.shape_left { left: 106px; }
+
+	.test__shape i.shape_right { left: 586px; }
+
+	/* Help Section */
+	.help__text { text-align: center; width: 100%; display: block; }
+
+	.help__text i { display: none; }
+
+	.help__text-typo { width: 100%; text-align: center; }
+
+	.help__btn { display: block; text-align: center; width: 30%; margin: 20px auto; }
+
+	/* Footer */
+	.footer__heading-item { margin-bottom: 30px; }
+
+	.footer__contact { display: block !important; width: 30%; text-align: center; }
+
+	.footer__contact-right { width: 100%; }
+
+	.footer__contacts-items { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+	.footer__contact-sq { margin: -30px auto 20px auto; }
+
+	.footer__contact-text { font-size: 16px; }
+
+	.footer__rights { font-size: 12px; }
+}
+
+/* 600 - 767 px */
+@media screen and (max-width: 767px) {
+	/* Features Section */
+	.feature-1 { height: 540px; }
+
+	/* Brands Section */
+	.brand__wrapper img { margin-bottom: 50px; }
+
+	/* Testimonials Section */
+	.test__desc { height: 300px; }
+
+	.test__shape i.shape_left { left: 75px; }
+
+	.test__shape i.shape_right { left: 435px; }
+
+	/* Help Section */
+	.help__btn { width: 50%; }
+
+	/* Footer */
+	.footer__heading-item { margin-bottom: 50px; }
+
+	.footer__logo { text-align: center; }
+
+	.footer__socials { float: none; width: 100%; padding: 0 150px; }
+}
+
+
+/* 480 - 599 px */
+@media screen and (max-width: 599px) {
+	/* Features Section */
+	.feature-1 { margin: 0 0 30px -6px; }
+
+	/* Sale Section */
+	.sale__wrapper { width: 100%; }
+
+	.sale__menu .sale__item { font-size: 22px; }
+
+	/* Testimonials Section */
+	.test__desc { height: 350px; }
+
+	.test__shape { display: none; }
+
+	.test__item { margin-bottom: 50px; }
+
+	/* Footer */
+	.footer__socials { padding: 0; }
+}
+
+
+/* 425 - 479 px */
+@media screen and (max-width: 479px) {
+	/* Features Section */
+	.features__last-items { display: block !important; margin-top: -135px; }
+
+	.feature-1 { height: 470px; }
+
+	.feature-1__btn { top: 380px; }
+
+	.feature-3, .feature-4 { width: 100%; }
+
+	.features { height: 1550px; }
+
+	.feature-1__logo { display: none; }
+
+	.feature-2 .feature__titles { right: 20px; }
+
+	.feature-3 .feature__titles .feature__header { font-size: 40px; }
+
+	/* Sale Section */
+	.sale__menu .sale__item { font-size: 18px; }
+
+	/* Testimonials Section */
+	.test__desc { height: 450px; }
+
+	/* Footer */
+	.footer__contacts-items { display: block; }
+
+	.footer__contact { width: 100%; text-align: center; margin-bottom: 150px; }
+
+}
+
+/* 375 - 424 px */
+@media screen and (max-width: 424px) {
+	/* Features */
+	.feature-2__nike { width: 180px; }
+
+	.feature-2 .feature__pre-header { font-size: 19px; }
+
+	/* Testimonials Section */
+	.test__desc { height: 500px; }
+}
+
+/* 320 - 374 px */
+@media screen and (max-width: 374px) {
+	/* Hero Section */
+	.offer__pre-header { font-size: 25px; }
+	
+	.offer__header { font-size: 40px; }
+
+	.offer__text { width: 100%; }   
+
+	.offer__post-header { font-size: 30px; }
+
+	.header__price { font-size: 11px; }
+
+	/* Features */
+	.feature-2__nike { width: 140px; }
+
+	.feature-2__btn { padding: 10px 20px; }
+
+	.feature-2 .feature__titles { right: 25px; }
+
+	/* Sale */
+	.sale__menu .sale__item { font-size: 15px; }
+
+	/* Testimonials Section */
+	.test__desc { height: 600px; }
+}
