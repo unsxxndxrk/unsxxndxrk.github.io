@@ -185,11 +185,10 @@ window.onload = function() {
     // end the game if user inactive
 	function timeIsOut() {
         if (gameIsOn && scoreModeOn) {  //if user inactive, stop the game
-			stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
-		} 
-		else if (gameIsOn && !scoreModeOn) {
-			stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
-		}
+				stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
+			} else if (gameIsOn && !scoreModeOn) {
+				stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
+			}
     }
 
     //reset timer
@@ -247,6 +246,8 @@ window.onload = function() {
 	// Blow the circle if user click
 	function blow(object) 
 	{
+		resetTimer(); //when user click, reset the timer
+		
 		object.style.opacity = '0';           // animate the circle for blowing effect
 		object.style.transform = 'scale(3)';	
 		object.classList.add('circle-blow');
@@ -297,8 +298,6 @@ window.onload = function() {
 			        if (target.id == 'circle_one' || target.id == 'circle_two' || target.id == 'circle_three' || 
 			        	target.id == 'circle_four' || target.id == 'circle_five') 
 			        {
-			        	resetTimer(); //when user click, reset the timer
-
 			        	var 
 			        		currentCircle = document.getElementById(target.id);  //get the current circle
 
