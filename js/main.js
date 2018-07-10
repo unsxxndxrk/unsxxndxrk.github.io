@@ -187,9 +187,9 @@ window.onload = function() {
         if (gameIsOn && scoreModeOn) {  //if user inactive, stop the game
 			stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
 		} 
-		// else if (gameIsOn && !scoreModeOn) {
-		// 	stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
-		// }
+		else if (gameIsOn && !scoreModeOn) {
+			stopTheScoreGame(showOne, showTwo, showThree, showFour, showFive);
+		}
     }
 
     //reset timer
