@@ -231,14 +231,14 @@ ul, li {
 
 /* Main */
 .main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
 /* Particles Background */
 .main .particles-bg {
-  height: inherit;
+  height: 100vh;
   width: inherit;
   background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
   background: -webkit-linear-gradient(bottom, #020209, #090d39);
