@@ -59,11 +59,6 @@ window.onload = function() {
 	else if (windowWidth >= 425 && windowWidth < 600) { spawnEdge = 130; } //425 - 600
 	else if (windowWidth >= 320 && windowWidth < 425) { spawnEdge = 110; } //320 - 424
 
-	if (window.innerWidth < 768) { //fix the 100vh bug
-		spawnArea.style.height = window.innerHeight;
-		console.log('mobile');
-	}
-
 	//if user press play button
 	play.onclick = function() {
 		timer.style.display = 'flex';  //show reverse timer when user start the game
