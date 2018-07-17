@@ -36,7 +36,7 @@
 
 /* 600 - 767 px */
 @media screen and (max-width: 767px) {
-	.main { height: calc(100vh - 60px); }
+	.main { height: calc(100vh - 55px); }
 
 	.main .particles-bg .main__wrapper { width: 75%; }
 
