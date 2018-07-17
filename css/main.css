@@ -238,7 +238,7 @@ ul, li {
 
 /* Particles Background */
 .main .particles-bg {
-  height: 100vh;
+  height: inherit;
   width: inherit;
   background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
   background: -webkit-linear-gradient(bottom, #020209, #090d39);
