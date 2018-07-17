@@ -8,47 +8,58 @@ window.onload = function() {
 
 		//UI
 
-		menuOpenBtn   = document.getElementById('menu_btn'),  //open sidebar button
-		sidebar 	  = document.getElementById('sidebar'),    //sidebar
-		bodyShadow    = document.getElementById('on_sidebar_active'),  //shadow block on bg
-		sidebarClose  = document.getElementById('close_sidebar'),    //close sidebar button
-		particlesBg   = document.getElementById('particles-js'),   //background with particle.js
-		mainWrapper   = document.getElementById('main_wrapper'),  //main wrapper
-		saveButton    = document.getElementById('save_btn'),   //save button
-		speedFast     = document.getElementById('speed_fast'),    // fast speed input
-		speedMedium   = document.getElementById('speed_medium'),  //medium speed input
-		speedSlow     = document.getElementById('speed_slow'),   // slow speed input
-		savedBlock    = document.getElementById('saved_text'),   //alert block when user saves data
-		play          = document.getElementById('play'),    //play button
-		stop          = document.getElementById('stop'),   //stop button
-		spawnArea     = document.getElementById('circles_wrapper'),  //spawnarea
-		freeMode      = document.getElementById('free_mode'),  //free mode input
-		scoreMode     = document.getElementById('score_mode'),	//score mode input
-		scoreCounter  = document.getElementById('show_score'), //score counre on bottom of UI
-		continueBtn   = document.getElementById('cont_btn'),   //button for continue after the end of the game
-		yourScoreText = document.getElementById('your_score'),
+		menuOpenBtn    = document.getElementById('menu_btn'),  //open sidebar button
+		sidebar 	   = document.getElementById('sidebar'),    //sidebar
+		bodyShadow     = document.getElementById('on_sidebar_active'),  //shadow block on bg
+		sidebarClose   = document.getElementById('close_sidebar'),    //close sidebar button
+		particlesBg    = document.getElementById('particles-js'),   //background with particle.js
+		mainWrapper    = document.getElementById('main_wrapper'),  //main wrapper
+		saveButton     = document.getElementById('save_btn'),   //save button
+		speedFast      = document.getElementById('speed_fast'),    // fast speed input
+		speedMedium    = document.getElementById('speed_medium'),  //medium speed input
+		speedSlow      = document.getElementById('speed_slow'),   // slow speed input
+		savedBlock     = document.getElementById('saved_text'),   //alert block when user saves data
+		play           = document.getElementById('play'),    //play button
+		stop           = document.getElementById('stop'),   //stop button
+		spawnArea      = document.getElementById('circles_wrapper'),  //spawnarea
+		freeMode       = document.getElementById('free_mode'),  //free mode input
+		scoreMode      = document.getElementById('score_mode'),	//score mode input
+		scoreCounter   = document.getElementById('show_score'), //score counre on bottom of UI
+		continueBtn    = document.getElementById('cont_btn'),   //button for continue after the end of the game
+		yourScoreText  = document.getElementById('your_score'),
 
 		//functionality
 
-		gameIsOn      = false,  //game is off by default        * 
-		speed         = 1300,  // speed of spawning circles         MAIN GAME DEPENDENCIES
-		score         = 0,    //score indicator                 
-		scoreModeOn   = true, //score mode is on by default     *
-		gameTimeout, //game timeout indicator         *
-		timer 	      = document.getElementById('timer'),   //reverse timer before the playing
-		timerField    = document.getElementById('timer_field'),
-		clickText     = document.getElementById('click'),  //show this text after the start timer is over
-		gameOverBlock = document.getElementById('game_over'), //game over text block
-		gameOverScore = document.getElementById('score'),   //show score when game is over
-		showScore     = document.getElementById('play_score'),  //show score while player in game
-		circles       = document.getElementsByClassName('circle'), //circles array
-		controlItems  = document.getElementsByClassName('control__item'), //control items array
+		gameIsOn       = false,  //game is off by default        * 
+		speed          = 1300,  // speed of spawning circles         MAIN GAME DEPENDENCIES
+		score          = 0,    //score indicator                 
+		scoreModeOn    = true, //score mode is on by default     *
+		gameTimeout, //game timeout indicator                    *
+		timer 	       = document.getElementById('timer'),   //reverse timer before the playing
+		timerField     = document.getElementById('timer_field'),
+		clickText      = document.getElementById('click'),  //show this text after the start timer is over
+		gameOverBlock  = document.getElementById('game_over'), //game over text block
+		gameOverScore  = document.getElementById('score'),   //show score when game is over
+		showScore      = document.getElementById('play_score'),  //show score while player in game
+		circles        = document.getElementsByClassName('circle'), //circles array
+		controlItems   = document.getElementsByClassName('control__item'), //control items array
+		windowWidth    = window.innerWidth,  //get user window width
+		spawnEdge      = 200,     //edge of spawning on spawn area (default, for 1366 - 768)
 
 		//variables for spawning
 
 		showOne, showTwo, showThree, showFour, showFive;  //all the five circles 
 
+	//change spawn edge in different resolutions
+	if (windowWidth >= 2560) { spawnEdge = 310; }   //2560 - up
+	else if (windowWidth >= 1920 && windowWidth < 2560) { spawnEdge = 300; }  //1920 - 2559
+	else if (windowWidth >= 1680 && windowWidth < 1920) { spawnEdge = 260; } //1680 - 1919
+	else if (windowWidth >= 1440 && windowWidth < 1680) { spawnEdge = 230; } //1440 - 1679
+	else if (windowWidth >= 600 && windowWidth < 1080) { spawnEdge = 160; } //600 - 1079
+	else if (windowWidth >= 425 && windowWidth < 600) { spawnEdge = 130; } //425 - 600
+	else if (windowWidth >= 320 && windowWidth < 425) { spawnEdge = 110; } //320 - 424
 
+	//if user press play button
 	play.onclick = function() {
 		timer.style.display = 'flex';  //show reverse timer when user start the game
 		var timerCounter = 2;
@@ -125,6 +136,11 @@ window.onload = function() {
 	sidebarClose.onclick = function() {
 		sidebar.style.right = '-350px';
 		bodyShadow.classList.remove('body-shadow');
+	}
+
+	bodyShadow.onclick = function() {
+		sidebar.style.right = '-350px';
+		this.classList.remove('body-shadow');
 	}
 
 	/* Save User Settings */
@@ -280,13 +296,15 @@ window.onload = function() {
 		if (gameIsOn) //check for the game is on
 		{
 			var 
-				x 			= String(getRandom(50, 1030)),  //get random coordinates for spawn
-				y 			= String(getRandom(50, 400));
+				x 			= String(getRandom(50, spawnArea.offsetWidth - spawnEdge)),  //get random coordinates for spawn
+				y 			= String(getRandom(50, spawnArea.offsetHeight - spawnEdge));
 
 			circle.style.left = x + 'px';  //set coordinates to current circle
 			circle.style.top  = y + 'px';
 
 			circle.style.display = 'block';  //show circle on current coordinates
+
+			// console.log(circleSize);
 
 			if (scoreModeOn)   //if user set the score mode
 			{
@@ -376,12 +394,22 @@ window.onload = function() {
 	//show the message about saved data
 	function showTheSaved() 
 	{
-		savedBlock.style.top = '30px';
-		savedBlock.style.opacity = '1';
+		if (windowWidth >= 320 && windowWidth < 767) {
+			savedBlock.style.bottom  = '30px';
+			savedBlock.style.opacity = '1';
 
-		setTimeout(function() {
-			savedBlock.style.top = '-100px';  //set some timeout for alert window
-		}, 2000);
+			setTimeout(function() {
+				savedBlock.style.bottom = '-100px';  //set some timeout for alert window
+			}, 2000);
+
+		} else {
+			savedBlock.style.top = '30px';
+			savedBlock.style.opacity = '1';
+
+			setTimeout(function() {
+				savedBlock.style.top = '-100px';  //set some timeout for alert window
+			}, 2000);
+		}
 	} 
 
 

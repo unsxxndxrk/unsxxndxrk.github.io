@@ -77,6 +77,9 @@ body {
 }
 
 .d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -89,47 +92,77 @@ body {
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .justify-content-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .justify-content-around {
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 .justify-content-between {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .align-items-center {
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-start-h {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flex-end-h {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .flex-start-v {
-  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .flex-end-v {
-  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .flex-column {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div, a, span, input, textarea, button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 input, textarea, button {
@@ -147,30 +180,53 @@ ul, li {
   padding: 0;
 }
 
-@keyframes scaleUp {
+@-webkit-keyframes scaleUp {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 .circle {
   height: 190px;
   width: 190px;
-  border-radius: 50%;
-  transform: scale(0);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   z-index: 10;
+  background: -webkit-gradient(linear, left bottom, left top, from(#5d0b64), to(#2d0fb1));
+  background: -webkit-linear-gradient(bottom, #5d0b64, #2d0fb1);
+  background: -o-linear-gradient(bottom, #5d0b64, #2d0fb1);
   background: linear-gradient(to top, #5d0b64, #2d0fb1);
 }
 
 .circle.circle_light {
+  background: -webkit-gradient(linear, left top, right bottom, from(#2b056b), to(#0025af)) !important;
+  background: -webkit-linear-gradient(top left, #2b056b, #0025af) !important;
+  background: -o-linear-gradient(top left, #2b056b, #0025af) !important;
   background: linear-gradient(to bottom right, #2b056b, #0025af) !important;
 }
 
 .circle_animate {
-  animation: scaleUp 0.3s ease;
+  -webkit-animation: scaleUp 0.3s ease;
+          animation: scaleUp 0.3s ease;
 }
 
 /* Main */
@@ -178,34 +234,31 @@ ul, li {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  /* Particles Background */
-  /* Author */
 }
 
+/* Particles Background */
 .main .particles-bg {
   height: inherit;
   width: inherit;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
+  background: -webkit-linear-gradient(bottom, #020209, #090d39);
+  background: -o-linear-gradient(bottom, #020209, #090d39);
   background: linear-gradient(to top, #020209, #090d39);
-  /* Main block inner */
-  /* Sidebar Block with Settings */
-  /* Controls */
-  /* Btn to open sidebar */
-  /* Light Theme For Particles Background */
 }
 
 .main .particles-bg .main__wrapper {
   height: 90%;
   width: 90%;
   background: rgba(20, 20, 47, 0.97);
-  border-radius: 5px;
-  /* Canvas wrapper */
-  /* Light Theme for Main Wrapper */
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .main .particles-bg .main__wrapper .circles__wrapper {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
 }
 
 .main .particles-bg .main__wrapper.main__wrapper_light {
@@ -217,25 +270,23 @@ ul, li {
   right: -350px;
   height: 100%;
   top: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020209), to(#090d39));
+  background: -webkit-linear-gradient(bottom, #020209, #090d39);
+  background: -o-linear-gradient(bottom, #020209, #090d39);
   background: linear-gradient(to top, #020209, #090d39);
   z-index: 40;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   padding: 100px 20px 50px 30px;
-  /* Close Sidebar Button */
-  /* Game Settings Title */
-  /* Sidebar Horisontal row */
-  /* Name of the setting */
-  /* Setting */
-  /* Radio Btn */
-  /* Set some margins */
-  /* Save Button */
-  /* Light Theme for Sidebar */
 }
 
 .main .particles-bg .sidebar .close {
   color: #f3f3f3;
   top: 20px;
   left: 20px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
   padding-bottom: 5px;
@@ -260,7 +311,8 @@ ul, li {
   height: 2px;
   background: #fafafa;
   border: none;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   margin-bottom: 50px;
 }
 
@@ -280,7 +332,8 @@ ul, li {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  border-radius: 2px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 
 .main .particles-bg .sidebar #dark_theme, .main .particles-bg .sidebar #speed_fast, .main .particles-bg .sidebar #speed_medium, .main .particles-bg .sidebar #free_mode {
@@ -293,37 +346,54 @@ ul, li {
 
 .main .particles-bg .sidebar .save-btn {
   margin-top: 40px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#1200ff), to(#10024b));
+  background: -webkit-linear-gradient(top left, #1200ff, #10024b);
+  background: -o-linear-gradient(top left, #1200ff, #10024b);
   background: linear-gradient(to bottom right, #1200ff, #10024b);
   padding: 10px 30px;
   border: none;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   font-size: 20px;
   font-weight: 500;
   color: #fafafa;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .main .particles-bg .sidebar .save-btn:hover {
-  box-shadow: 0 0 20px #1a008b;
-  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px #1a008b;
+          box-shadow: 0 0 20px #1a008b;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .main .particles-bg .sidebar .save-btn.save-btn_light {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a734ff), to(#6c1a80));
+  background: -webkit-linear-gradient(top left, #a734ff, #6c1a80);
+  background: -o-linear-gradient(top left, #a734ff, #6c1a80);
   background: linear-gradient(to bottom right, #a734ff, #6c1a80);
 }
 
 .main .particles-bg .sidebar .save-btn.save-btn_light:hover {
-  box-shadow: 0 0 20px #691b7c;
+  -webkit-box-shadow: 0 0 20px #691b7c;
+          box-shadow: 0 0 20px #691b7c;
 }
 
 .main .particles-bg .sidebar.sidebar_light {
+  background: -webkit-gradient(linear, left bottom, left top, from(#5d218c), to(#ae25d0));
+  background: -webkit-linear-gradient(bottom, #5d218c, #ae25d0);
+  background: -o-linear-gradient(bottom, #5d218c, #ae25d0);
   background: linear-gradient(to top, #5d218c, #ae25d0);
 }
 
 .main .particles-bg .controls {
   height: 90%;
   width: 65px;
+  top: 35px;
+  left: 0;
 }
 
 .main .particles-bg .controls .control__item {
@@ -331,13 +401,17 @@ ul, li {
   color: #f1f1f1;
   margin-bottom: 15px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: .75;
 }
 
 .main .particles-bg .controls .control__item:hover {
   color: #4758ff;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 1;
 }
 
@@ -356,8 +430,11 @@ ul, li {
   width: 50px;
   background: #4758ff;
   opacity: 0.4;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   /* Light Theme for Open Sidebar Button */
 }
@@ -379,7 +456,9 @@ ul, li {
 }
 
 .main .particles-bg .open-btn:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   opacity: 1;
 }
 
@@ -388,6 +467,9 @@ ul, li {
 }
 
 .main .particles-bg.particles-bg_light {
+  background: -webkit-gradient(linear, left bottom, left top, from(#b570f5), to(#bbabff));
+  background: -webkit-linear-gradient(bottom, #b570f5, #bbabff);
+  background: -o-linear-gradient(bottom, #b570f5, #bbabff);
   background: linear-gradient(to top, #b570f5, #bbabff);
 }
 
@@ -407,6 +489,8 @@ ul, li {
   top: 0;
   left: 0;
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -449,6 +533,8 @@ ul, li {
   cursor: default;
   pointer-events: none;
   top: -100px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0;
   z-index: 60;
@@ -496,27 +582,39 @@ ul, li {
 
 .game-over .continue-btn {
   margin-top: 30px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#1200ff), to(#10024b));
+  background: -webkit-linear-gradient(top left, #1200ff, #10024b);
+  background: -o-linear-gradient(top left, #1200ff, #10024b);
   background: linear-gradient(to bottom right, #1200ff, #10024b);
   color: #fff;
   border: none;
   font-size: 20px;
   padding: 12px 25px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .game-over .continue-btn:hover {
-  box-shadow: 0 0 20px #1a008b;
-  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px #1a008b;
+          box-shadow: 0 0 20px #1a008b;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 
 .game-over .continue-btn.continue_light {
+  background: -webkit-gradient(linear, left top, right bottom, from(#a734ff), to(#6c1a80));
+  background: -webkit-linear-gradient(top left, #a734ff, #6c1a80);
+  background: -o-linear-gradient(top left, #a734ff, #6c1a80);
   background: linear-gradient(to bottom right, #a734ff, #6c1a80);
 }
 
 .game-over .continue-btn.continue_light:hover {
-  box-shadow: 0 0 20px #691b7c;
+  -webkit-box-shadow: 0 0 20px #691b7c;
+          box-shadow: 0 0 20px #691b7c;
 }
 
 .show-score {
