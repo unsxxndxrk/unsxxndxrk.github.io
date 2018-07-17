@@ -231,7 +231,7 @@ ul, li {
 
 /* Main */
 .main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
