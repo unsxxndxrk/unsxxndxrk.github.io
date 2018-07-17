@@ -38,7 +38,7 @@
 @media screen and (max-width: 767px) {
 	.main { height: calc(100vh - 55px); }
 
-	.main .particles-bg .main__wrapper { width: 75%; }
+	.main .particles-bg .main__wrapper { width: 75%; top: 25px; }
 
 	.saved-text {
 	  top: unset;
