@@ -313,8 +313,7 @@ window.onload = function() {
 					    target = e.target;  //catch the target
 
 					// check the target
-			        if (target.id == 'circle_one' || target.id == 'circle_two' || target.id == 'circle_three' || 
-			        	target.id == 'circle_four' || target.id == 'circle_five') 
+			        if (target.classList.contains('circle')) 
 			        {
 			        	var 
 			        		currentCircle = document.getElementById(target.id);  //get the current circle
