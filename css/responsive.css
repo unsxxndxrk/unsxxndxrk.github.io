@@ -1,287 +1,81 @@
 /* 2560 and up */
-@media screen and (max-width: 3000px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 440px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 500px; }
+@media screen and (max-width: 3000px) { .circle { height: 300px; width: 300px; } }
+
+/* 1920 - 2559 px */
+@media screen and (max-width: 2559px) { .circle { height: 290px; width: 290px; } }
+
+/* 1680 - 1919 px */
+@media screen and (max-width: 1919px) { .circle { height: 250px; width: 250px; } }
+
+/* 1600 - 1679 px */
+@media screen and (max-width: 1679px) { .circle { height: 220px; width: 220px; } }
+
+/* 1366 - 1599 px */
+@media screen and (max-width: 1599px) { .circle { height: 190px; width: 190px; } }
+
+/* 1080 - 1365 px */
+@media screen and (max-width: 1279px) { 
+	.main .particles-bg .main__wrapper { width: 85%; } 
+
+	.saved-text { left: 40%; }
 }
 
-/* 2300 - 2559 px */
-@media screen and (max-width: 2559px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 340px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 400px; }
+/* 1024 - 1079 px */
+@media screen and (max-width: 1079px) { 
+	.circle { height: 150px; width: 150px; } 
+
+	.saved-text { left: 30%; }
 }
 
-/* 2200 - 2299 px */
-@media screen and (max-width: 2299px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 240px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 300px; }
-}
-
-/* 1920 - 2199 px */
-@media screen and (max-width: 2199px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 140px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 200px; }
-}
-
-
-/* 1760 - 1919 px */
-@media screen and (max-width: 1919px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 40px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 100px; }
-}
-
-
-/* 1536 - 1759 px */
-@media screen and (max-width: 1759px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: 0; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: 50px; }
-}
-
-
-/* 1440 - 1535 px */
-@media screen and (max-width: 1535px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: -95px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: -100px; }
-}
-
-
-/* 1280 - 1439 px */
-@media screen and (max-width: 1439px) { .iphone-feature__iphone { left: -130px; } }
-
-
-/* 1220 - 1279 px */
-@media screen and (max-width: 1279px) {
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: -235px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: -200px; }
-}
-
-/* 1120 - 1219 px */
-@media screen and (max-width: 1219px) {
-    .container { width: 90%; }
-    
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: -290px; }
-    
-    /* Map Feature Section */
-    .map-feature__map { right: -220px; }
-    
-    /* Hero Section */
-    .features__hr { width: 100%; }
-    
-    /* Plan Section */
-    .wrapper__right-inner-item { width: 300px; }
-    
-    .wrapper__right-inner-item:first-child { right: 300px; }
-    
-    /* Contacts Section */
-    .contacts__wrapper-item:first-child { width: 40%; }
-    
-    .contacts__wrapper-item:last-child { width: 60%; }
-}
-
-
-/* (1080 x 1920) - 1119 px */
-@media screen and (max-width: 1119px) {
-    /* Plan Section */
-    .wrapper__right-inner-item { width: 270px; }
-    
-    .wrapper__right-inner-item:first-child { right: 290px; }
-    
-    .right__inner-middle-btn { padding: 10px 20px; }
-    
-    .right__inner-middle-header { margin-bottom: 10px; }
-}
-
-
-/* 1024 (993px if bootstrap) - 1079 px */
-@media screen and (max-width: 1079px) {
-    /* Features Section */
-    .features__block { display: block; }
-    
-    .features__block-item { width: 100%; margin-top: 100px; }
-    
-    .features__block-item:first-child { margin-top: 0; }
-    
-    /* Iphone Feature Section */
-    .iphone-feature__iphone { left: -400px; }
-    
-    /* Plan Section */
-    .plan { padding: 60px 0; }
-    
-    .plan__wrapper { display: block; }
-    
-    .plan__wrapper-left, .wrapper__left-footer { width: 100%; text-align: center; }
-    
-    .wrapper__left-middle { margin-top: 40px; }
-    
-    .wrapper__left-slider-wrapper { margin: 20px auto; }
-    
-    .plan__wrapper-right-inner { display: block; position: static; }
-    
-    .wrapper__right-inner-item { 
-        width: 100%; 
-        position: static;
-        margin-top: 80px;
-        height: 470px;
-    }
-    
-    .plan__item-active { -webkit-transform: scale(1.01); transform: scale(1.01); }
-}
-
-
-/* 768 - 1023px */
+/* 768 - 1023 (992px if bootstrap) px */
 @media screen and (max-width: 1023px) {
-    /* Hero Section */
-    .left__nav-menu, .right__nav-menu { display: none; }
-    
-    .slide-menu__contacts { margin-top: 90px; }
-    
-    /* IPhone Feature Section */
-    .iphone-feature { padding: 70px 0; }
-    
-    .iphone-feature__items-item-desc {
-        margin-top: 0; 
-        float: none;
-        width: 100%;
-    }
-    
-    .iphone-feature__iphone { 
-        position: static;
-        width: 100%;
-        margin-top: 80px;
-    }
-    
-    /* Map Feature Section */
-    .map-feature { padding: 70px 0; }
-    
-    .map-feature__items-item-desc {
-        float: none;
-        width: 100%;
-        margin-top: 0;
-    }
-    
-    .map-feature__map {
-        width: 100%;
-        position: static;
-        margin-top: 80px;
-    }
-    
-    /* Contacts Section */
-    .contacts__wrapper { display: block; }
-    
-    .contacts .contacts__wrapper-item { width: 100%; }
-    
-    .contacts__wrapper-left-inner {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .contacts__left-socials { margin: 45px auto; }
-    
-    .contacts__left-socials-items { -ms-flex-pack: distribute; justify-content: space-around; }
-    
-    .contacts__wrapper-right-inner { 
-        -ms-flex-pack: distribute; 
-        justify-content: space-around; 
-        margin-top: 90px;
-    }
-    
-    .contacts__wrapper-right-item { width: auto; margin-right: 0; }
-    
-    .contacts__right-item-list { text-align: center; }
-    
-    /* Footer SEction */
-    .footer__wrapper { display: block; }
-    
-    .footer__wrapper-item { width: 100%; text-align: center; }
-    
-    .footer__wrapper-item-author { display: block; }
-    
-    .footer__wrapper-item-author span { margin-top: 40px; display: block; }
-    
-    .footer__wrapper-item-author img { display: block; margin: 5px auto; }
-}
+	.main .particles-bg .main__wrapper { width: 80%; }
 
+	.saved-text { left: 36%; font-size: 14px; width: 300px; }
+}
 
 /* 600 - 767 px */
 @media screen and (max-width: 767px) {
-    /* Hero,  Get It, Team and Subscribe Sections */
-    .offer__text, .get-it__block-form, .get-it__input, .team .team__carousel, .carousel__item-text, .subscribe__form-wrapper { width: 100%; }
-}
+	.main { height: calc(100vh - 55px); }
 
+	.main .particles-bg .main__wrapper { width: 75%; top: 25px; }
+
+	.saved-text {
+	  top: unset;
+	  bottom: 30px;
+	  height: 100px;
+	  left: 50%;
+	  margin-left: -150px;
+	}
+
+	.click, .main .timer span { font-size: 100px; }
+
+	.game-over .game-over__inner .game-over__title { font-size: 50px; }
+
+	.game-over .game-over__inner .game-over__score { font-size: 30px; }
+}
 
 /* 480 - 599 px */
 @media screen and (max-width: 599px) {
-    /* Team Section */
-    .slick-dots { bottom: 360px; }
-    
-    .team .slick-dots li { width: 110px; height: 110px; }
+	.main .particles-bg .main__wrapper { width: 70%; }
+
+	.circle { height: 120px; width: 120px; }
 }
 
-
-/* 425 - 479 px */
+/* 375 - 479 px */
 @media screen and (max-width: 479px) {
-    /* Hero Section */
-    .slide-out-menu { width: 300px; left: -300px; }
-    
-    .menu-open { left: 0; }
+	.main .particles-bg .main__wrapper { width: 65%; }
 
-    /* Team Section */
-    .team .slick-dots li { width: 100px; height: 100px; }
-    
-    /* Get In Section */
-    .get-it__button { padding: 9px 10px; }
-    
-    .get-it__button i { margin-left: 8px; }
+	.circle { height: 100px; width: 100px; }
+
+	.main .author { font-size: 12px; }
 }
-
-
-/* 375 - 424 px */
-@media screen and (max-width: 424px) { 
-    /* Hero Section */
-    .offer__title { font-size: 40px; } 
-    
-    /* Team Section */
-    .slick-dots { bottom: 400px; }
-    
-    .team .slick-dots li { width: 80px; height: 80px; }
-    
-    /* Get In Section */
-    .get-it__input { font-size: 12px; }
-    
-    .get-it__button { padding: 9px 8px; }
-    
-    .get-it__button i { margin-left: 8px; }
-    
-    /* Subscribe Section */
-    .subscribe__btn { width: 100px; }
-}
-
 
 /* 320 - 374 px */
-@media screen and (max-width: 374px) { .right__inner-footer { margin-top: 40px; } }
+@media screen and (max-width: 374px) {
+	.main .particles-bg .main__wrapper { width: 60%; }
+
+	.main .particles-bg .sidebar { width: 300px; padding: 100px 5px; }
+
+	.main .particles-bg .sidebar .sidebar__setting-title { font-size: 16px; }
+}
