@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Beautiful Portfolio Wordpress Theme for Creatives | Themes</title>
+    <meta name="author" content="Zaviryukha Igor">
+    <meta name="description" content="Landing page">
+    <meta name="keywords" content="landing, page">
+    <!-- Open Sans Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Themes CSS -->
+    <link href="css/themes.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="message fixed">
+        <div class="message__popup absolute d-none fadeIn" id="mes_popup">
+            <form action="" class="relative">
+                <input type="text" class="absolute" placeholder="Search here..">
+                <button class="absolute"><i class="fa fa-search"></i></button>
+            </form>
+            <ol type="number">
+               <li>
+                   1. <a href="#">Locate your license key</a>
+               </li> 
+               <li>
+                   2. <a href="#">Find Code</a>
+               </li> 
+               <li>
+                   3. <a href="#">Install</a>
+               </li> 
+            </ol>
+            <hr>
+            <div class="message__popup-footer">
+                <a href="#">Send a Message</a>
+            </div>
+        </div>
+        <div class="message__btn d-flex justify-content-center align-items-center relative" id="message_btn">
+            <i class="fa fa-comment absolute mes_active"></i>
+            <i class="fa fa-times absolute"></i>
+        </div>
+    </div>
+
+    <header id="header" class="header">
+        <div class="nav-fixed fixed">
+            <div class="container">
+                <div class="nav-fixed__wrapper d-flex justify-content-between align-items-center">
+                     <div class="nav-fixed__filter d-flex align-items-center relative" id="filter">
+                         <i class="fa fa-sliders absolute"></i>
+                         <i class="fa fa-times absolute f_nav_opac" id="filter_close"></i>
+                         <span>Filter</span>
+                     </div>
+                     <div class="nav-fixed__text d-flex">
+                         <div class="nav-fixed__typo d-flex">
+                             <div class="nav-fixed__num d-flex">
+                                 <span>$</span>
+                                 <span>99</span>
+                             </div>
+                             <div class="nav-fixed__typo-text">
+                                 Lorem ipsum dolor sit amet, onsectetur adipisicing el
+                             </div>
+                         </div>
+                         <a href="#" class="nav-fixex__btn">Join now</a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <div class="filter-bar fixed" id="filter_bar">
+            <div class="filter-bar__wrapper">
+                 <h3 class="filter-bar__heading">Categories</h3>
+                 <hr class="filter-bar__hr">
+                 <ul class="filter-bar__categories">
+                     <li id="all" class="filter-bar__item-c">All</li>
+                     <li id="agency" class="filter-bar__item-c">Agency</li>
+                     <li id="business" class="filter-bar__item-c">Business</li>
+                     <li id="blog" class="filter-bar__item-c">Blog</li>
+                     <li id="photo" class="filter-bar__item-c">Photography</li>
+                     <li id="portfolio" class="filter-bar__item-c">Portfolio</li>
+                     <li id="restaurant" class="filter-bar__item-c">Restaurant</li>
+                     <li id="shop" class="filter-bar__item-c">Shop</li>
+                     <li id="wedding" class="filter-bar__item-c">Wedding</li>
+                     <li id="free" class="filter-bar__item-c">Free</li>
+                 </ul>
+
+                 <h3 class="filter-bar__heading">Sort by</h3>
+                 <hr class="filter-bar__hr">
+                 <ul class="filter-bar__categories">
+                     <li id="latest" class="filter-bar__item-c">Laters</li>
+                     <li id="popular" class="filter-bar__item-c">Popular</li>
+                     <li id="random" class="filter-bar__item-c">Random</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar d-flex justify-content-between align-items-center">
+                <div class="navbar__logo">
+                    <img src="img/logo.PNG" alt="logo">
+                </div>
+                <div class="burger-menu d-none relative" id="menu_btn">
+                    <span class="absolute"></span>
+                    <span class="absolute"></span>
+                </div>
+                <ul class="navbar__menu d-flex justify-content-between align-items-center"> 
+                    <li class="navbar__menu-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="themes.html">Themes</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="navbar__menu-item">
+                        <a href="ava.html">Ava</a>
+                    </li>
+                </ul>
+                <div class="navbar__logo-2 d-none">
+                    <img src="img/logo.PNG" alt="logo">
+                </div>
+                <a href="#" class="navbar__btn d-block">
+                    Join our Club
+                </a>
+            </nav>
+            <div class="nav__dropdown">
+                <div class="nav__dropdown-inner" id="nav_drop">
+                    <div class="nav__dropdown-heading d-flex justify-content-center flex-column">
+                        <ul class="nav__dropdown-menu">
+                            <li class="nav__dropdown-item">
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="themes.html">Themes</a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav__dropdown-item">
+                                <a href="ava.html">Ava</a>
+                            </li>
+                            <a href="#" class="navbar-drop__btn d-block">
+                                Join our Club
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="offer d-flex justify-content-center">
+                <h2 class="offer__text text-center">
+                    Our beautifully designed WordPress themes come with loads of customizable features,
+                     stunning looks and rock-solid code. Pick a theme — or <a href="#">join the club</a> and get them all for just $99.
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <section id="items" class="items">
+        <div class="container">
+            <div class="items__row d-flex justify-content-between">
+                <div class="items__col">
+                    <div class="items__col-item agency portfolio latest">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item business portfolio popular">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/2.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item agency popular">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item agency">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/2.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item business">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item shop wedding">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                </div>
+                <div class="items__col">
+                    <div class="items__col-item business wedding">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/2.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item business photo free latest">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                     <div class="items__col-item blog photo popular">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/2.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item blog photo popular">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item blog photo latest">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/2.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                    <div class="items__col-item restaurant">
+                        <div class="item__col-inner relative">
+                            <div class="item__col-item">
+                                <a href="#"><img src="img/1.png" alt="1"></a>
+                                <div class="absolute item__hover d-flex justify-content-center align-items-center">
+                                   <div class="item__col-btns d-flex align-items-center flex-column">
+                                       <a href="#" class="item__col-btn">
+                                           Preview Tabor
+                                       </a>
+                                       <a href="#" class="item__col-btn">
+                                           View Details
+                                       </a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items__col-text text-center">
+                            <span class="bold-letters">Tabor</span> &mdash; Professional Writing WordPress Theme
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__wrapper d-flex">
+                <div class="footer__logo">
+                    <img src="img/logo.PNG" alt="logo">
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__nav-menus d-flex">
+                        <ul class="footer__nav_1 footer__menu-list"> 
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Themes</a>
+                            </li>
+                            <li>
+                                <a href="">Plugins</a>
+                            </li>
+                            <li>
+                                <a href="">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">LogIn</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__nav_2 footer__menu-list"> 
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Hosting</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">Custom</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__nav_3 footer__menu-list"> 
+                            <li>
+                                <a href="">Twitter <span>&rarr;</span></a>
+                            </li>
+                            <li>
+                                <a href="">Facebook <span>&rarr;</span></a>
+                            </li>
+                            <li>
+                                <a href="">Pinterest <span>&rarr;</span></a>
+                            </li>
+                            <li>
+                                <a href="">Dribble <span>&rarr;</span></a>
+                            </li>
+                        </ul>
+                        <ul class="footer__nav_4 footer__menu-list"> 
+                            <li>
+                                <a href="">Someone's Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Login Designer</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__rights">
+                        &copy; 2028 BlaBlaBla. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- WoW JS -->
+<script type="text/javascript" src="js/wow.min.js"></script>
+<!-- Activate wow.min.js -->
+<script>new WOW().init();</script>
+<!-- Main JS -->
+<script type="text/javascript" src="js/main.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</body>
+</html>
