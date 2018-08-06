@@ -142,7 +142,7 @@
 
 	.offer { padding: 150px 0 100px 0; }
 
-	.navbar .navbar__logo-2 { position: absolute; top: 15px; left: 50%; margin-left: -67px; }
+	.navbar .navbar__logo-2 { position: absolute; top: 8px; left: 50%; margin-left: -67px; }
 
 	.navbar__logo, .navbar__menu, .navbar__btn, .nav-fixed { display: none; }
 
