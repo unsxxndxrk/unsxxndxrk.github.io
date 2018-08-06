@@ -91,6 +91,8 @@ ul, li {
     padding: 0;
 }
 
+.blur { filter: blur(10px); }
+
 /* Hero Section */
 
 .nav-menu__fixed {
@@ -98,7 +100,7 @@ ul, li {
     height: 0;
     top: 0;
     left: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
     opacity: 0;
     transition: $transition;
 
@@ -118,8 +120,9 @@ ul, li {
     .nav__dropdown-menu {
         width: 100%;
         text-align: center;
+        display: none;
         margin-top: 50px;
-
+       
         .nav__dropdown-item {
             margin-top: 24px;
 
@@ -149,6 +152,8 @@ ul, li {
                 background: #3570f5;
             }
         }
+
+        &.drop-menu_active { display: block; }
     }
 }
 

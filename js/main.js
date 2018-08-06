@@ -17,6 +17,9 @@ $(document).ready(function() {
     /*  */
 
     $('#menu_btn').click(function () {
+        $('.nav__dropdown-menu').toggleClass('drop-menu_active');
+        $('.message').toggleClass('d-none');
+        $('section, .offer, .footer').toggleClass('blur');
         $('#nav_menu_fixed').toggleClass('nav-fixed_active');
     	$('#menu_btn span:nth-child(1)').toggleClass('burger_1_active');
     	$('#menu_btn span:nth-child(2)').toggleClass('burger_2_active');
@@ -52,7 +55,7 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
 		var wScroll = $(this).scrollTop();
-		// Activate menu
+		
 		if (wScroll > 20) {
 			$('.nav-fixed').addClass('nav-fixed_active');
 			$('#filter_bar').addClass('filter-bar_active_bot');
