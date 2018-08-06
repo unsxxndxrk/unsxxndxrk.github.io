@@ -1,0 +1,39 @@
+/* Pricing Styles */
+$transition: all .3s ease;
+$test: 1px dashed red;
+$text-color: #292929;
+
+.offer { padding: 100px 0 0 0; }
+
+/* Q&A */
+
+.qa {
+	padding: 65px 0;
+
+	.qa__wrapper {
+		padding: 0 95px;
+
+		.qa__col {
+			width: 430px;
+			margin-bottom: 55px;
+
+			.qa__col-title {
+				font-size: 20px;
+				color: $text-color;
+				margin-bottom: 20px;
+			}
+
+			.qa__col-text {
+				font-size: 17px;
+				color: #505050;
+				line-height: 1.8em;
+			}
+
+			.qa__col-par { margin-top: 20px; }
+		}
+	}
+}
+
+/* Testimonials */
+
+.test { padding-top: 10px; }
