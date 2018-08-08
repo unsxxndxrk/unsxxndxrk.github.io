@@ -9,14 +9,12 @@
     <meta name="author" content="Zaviryukha Igor">
     <meta name="description" content="Landing page">
     <meta name="keywords" content="landing, page">
-    <!-- Open Sans Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Normalize CSS -->
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <!-- Animate CSS -->
-    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
     <!-- Ava CSS -->
@@ -52,6 +50,31 @@
         </ul>
       </div>
   </div>
+    
+    <div class="message-mobile fixed d-none" id="mes_mob_popup">
+       <div class="message-mob__popup">
+           <i class="fa fa-times absolute mes-mob__close" id="mes_mob_close"></i>
+            <form action="" class="relative">
+                <input type="text" class="absolute" placeholder="Search here..">
+                <button class="absolute"><i class="fa fa-search"></i></button>
+            </form>
+            <ol type="number">
+               <li>
+                   1. <a href="#">Locate your license key</a>
+               </li> 
+               <li>
+                   2. <a href="#">Find Code</a>
+               </li> 
+               <li>
+                   3. <a href="#">Install</a>
+               </li> 
+            </ol>
+            <hr class="mes-mob__hr absolute">
+            <div class="message-mob__popup-footer absolute">
+                <a href="#">Send a Message</a>
+            </div>
+        </div>
+   </div>
 
     <div class="message fixed">
         <div class="message__popup absolute d-none fadeIn" id="mes_popup">
@@ -86,7 +109,9 @@
             <nav class="navbar">
                 <div class="navbar__inner-wrap d-flex justify-content-between align-items-center">
                     <div class="navbar__logo">
-                        <img src="img/logo.PNG" alt="logo">
+                        <a href="#">
+                            <img src="img/logo.PNG" alt="logo">
+                        </a>
                     </div>
                     <div class="burger-menu d-none relative" id="menu_btn">
                         <span class="absolute"></span>
@@ -121,7 +146,7 @@
                 </div>
             </nav>
             
-            <div class="offer d-flex justify-content-center">
+            <div class="offer offer-pricing d-flex justify-content-center">
                 <h2 class="offer__text text-center">
                      Choose a theme or join the ThemeBeans Club to access all our WordPress themes for less than the price of two. We stand by our themes — backed by our 14-day money-back guarantee.
                 </h2>
@@ -257,7 +282,7 @@
         </div>
     </section>
 
-    <section id="test" class="test">
+    <section id="test" class="test test-pricing">
         <div class="container">
             <div class="test__wrapper">
                <div class="test__heading text-center">
@@ -511,10 +536,6 @@
     </footer>
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<!-- WoW JS -->
-<script type="text/javascript" src="js/wow.min.js"></script>
-<!-- Activate wow.min.js -->
-<script>new WOW().init();</script>
 <!-- Main JS -->
 <script type="text/javascript" src="js/main.js"></script>
 <!--[if lt IE 9]>

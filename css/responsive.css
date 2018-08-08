@@ -93,7 +93,7 @@
 
 	.test .test__review-text { font-size: 21px; }
 
-	.footer__nav-menus { flex-wrap: wrap; }
+	.footer__nav-menus { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 	.footer .footer__nav .footer__menu-list { margin-bottom: 50px; margin-right: 100px; }
 }
@@ -157,11 +157,11 @@
 
 	.footer .footer__nav .footer__menu-list { margin-right: 70px; }
 
-	.price__wrapper { justify-content: center; flex-wrap: wrap; flex-direction: column; }
+	.price__wrapper { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
 	.price .price__item { padding: 40px 0; background: #f6f6f6; margin-bottom: 50px; }
 
-	.price .price__item .price__cost { justify-content: center; margin-right: 20px; }
+	.price .price__item .price__cost { -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; margin-right: 20px; }
 
 	.about__wrapper { display: block; }
 
@@ -196,7 +196,7 @@
 
 	.nav-fixex__btn { display: none; }
 
-	.nav-fixed__typo { justify-content: space-between; }
+	.nav-fixed__typo { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 	.nav-fixed__text .nav-fixed__num span:last-child { font-size: 25px; }
 
@@ -230,7 +230,7 @@
 
 	.first-banner__text-text { width: 100%; text-align: center; }
 
-	.items__row { flex-wrap: wrap; justify-content: center; flex-direction: column; }
+	.items__row { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
 	.items__row .items__col { width: 100%; }
 

@@ -1,4 +1,3 @@
-/* Ava Styles */
 .nav-fixed__text-ava {
   font-size: 14px;
 }
@@ -7,8 +6,11 @@
   text-decoration: none;
   font-size: 14px;
   padding: 7px 13px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
 }
 
 .nav-fixed__text-ava a:first-child {
@@ -35,6 +37,8 @@
   color: #f7f7f7;
   width: 100%;
   z-index: 9999;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -86,6 +90,8 @@
 
 .introduction__wrapper .introduction__link span {
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -114,6 +120,8 @@
 
 .features__item .features__title {
   font-size: 28px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -121,12 +129,16 @@
 .features__item .features__open {
   font-size: 50px;
   font-weight: 300;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .features__item .features__open.features__open_rotate {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .features__item:hover .features__title, .features__item:hover .features__open {
@@ -135,6 +147,8 @@
 
 .features__item .features__item-drop-wrap {
   margin-top: -1200px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -246,6 +260,8 @@
   top: 0;
   left: 0;
   z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -261,12 +277,15 @@
   width: 80px;
   height: 80px;
   background: #2465f7;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   top: 20px;
   right: 20px;
   color: #fff;
   font-size: 14px;
   opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
