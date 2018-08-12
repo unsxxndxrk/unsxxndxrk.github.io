@@ -1,0 +1,42 @@
+/* Contact Styles */
+.about {
+  padding: 92px 0 60px 0;
+}
+
+.about .about__item {
+  color: #292929;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #f6f6f6;
+  width: 385px;
+  padding: 120px 55px;
+}
+
+.about .about__item:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.about .about__item * {
+  cursor: pointer;
+}
+
+.about .about__item .about__title {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.about .about__item i {
+  font-size: 62px;
+  margin-bottom: 22px;
+}
+
+.about .about__item .about__text {
+  color: #787878;
+  line-height: 1.8em;
+  font-size: 15px;
+}
