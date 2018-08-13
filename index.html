@@ -1,407 +1,639 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>Alexis</title>
+    <title>БыстрыйОбед</title>
     <meta name="author" content="Zaviryukha Igor">
     <meta name="description" content="Landing page">
     <meta name="keywords" content="landing, page">
-    <link href="images/dollar.png" rel="shortcut icon">
-    <!-- Poppins Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <!-- Libre Baskerville Font -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+    <!-- Roboto Slab Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Normalize CSS -->
-    <link href="css/normalize.css" rel="stylesheet">
     <!-- Animate CSS -->
     <link href="css/animate.css" rel="stylesheet">
-    <!-- Slick Carousel -->
-    <link href="css/slick.css" rel="stylesheet">
-    <!-- Slick Carousel Theme -->
-    <link href="css/slick-theme.css" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link href="css/materialize.css" rel="stylesheet">
     <!-- Main CSS -->
     <link href="css/main.css" rel="stylesheet">
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
-</head> 
+</head>
 <body>
     <header id="header" class="header">
-        <div class="container relative">
-            <nav class="header__navigation">
-                <div class="slide-out-menu">
-                   <div class="slide-out-menu__header">
-                       <a href="#header" class="go_to"><img src="images/footer-logo.png" alt="Alexis"></a>
-                       <i class="fa fa-times menu-close absolute"></i>
-                       <hr class="slide-out__header-hr d-block">
-                   </div>
-                   <ul class="slide-out__menu">
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#about" class="go_to">About us</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#focus" class="go_to">Our focus</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#portfolio" class="go_to">Portfolio</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#team" class="go_to">Our team</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#steps" class="go_to">Work steps</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#pricing" class="go_to">Pricing</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#test" class="go_to">Testimonials</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#blog" class="go_to">Blog</a>
-                        </li>
-                        <li class="slide-out__menu-item capitalize">
-                            <a href="#footer" class="go_to">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="container d-flex justify-content-between align-items-center">
-                    <div class="header__logo-block animated fadeIn">
-                        <a href="#header" class="go_to"><img src="images/logo.png" alt="Alexis"></a>
+        <div class="parallax-container">
+            <div class="parallax"><img src="img/first-bg.jpg"></div>
+            <div class="container">
+                <ul id="slide-out" class="sidenav">
+                    <li class="header__drop-nav-item">
+                         <a href="#menu" class="go_to">Меню</a>
+                     </li>
+                     <li class="header__drop-nav-item">
+                         <a href="#" class="go_to">О компании</a>
+                     </li>
+                     <li class="header__drop-nav-item">
+                         <a href="#" class="go_to">Контакты</a>
+                     </li>
+                     <li class="header__drop-nav-item">
+                         <a href="#" class="mont waves-effect waves-light header__nav-btn">Заказать обед</a>
+                     </li>
+                </ul>
+                <div class="row align-items-center d-flex justify-content-between">
+                    <div class="col s1">
+                        <span class="header__logo mont wow fadeIn">БыстрыйОбед</span>
                     </div>
-                    <ul class="header__navigation-menu d-flex animated fadeIn">
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#about" class="go_to">About us</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#focus" class="go_to">Our focus</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#portfolio" class="go_to">Portfolio</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#team" class="go_to">Our team</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#steps" class="go_to">Work steps</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#pricing" class="go_to">Pricing</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#test" class="go_to">Testimonials</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#blog" class="go_to">Blog</a>
-                        </li>
-                        <li class="header__navigation-menu-item capitalize">
-                            <a href="#footer" class="go_to">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="header__menu-button d-none animated fadeIn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="col s6 offset-s5 justify-content-between header__row-toggler">
+                        <ul class="header__nav d-flex justify-content-between mont wow fadeIn align-items-center">
+                             <li class="header__nav-item">
+                                 <a href="#menu" class="go_to">Меню</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="#" class="go_to">О компании</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="#" class="go_to">Контакты</a>
+                             </li>
+                             <li class="header__nav-item">
+                                 <a href="#" class="mont waves-effect waves-light header__nav-btn">Заказать обед</a>
+                             </li>
+                        </ul>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger header__menu-btn d-none"><i class="material-icons fa fa-bars"></i></a>
                     </div>
                 </div>
-            </nav>
-            <div class="offer text-center">
-                <div class="offer__text">
-                    <h2 class="offer__text-title librefont animated fadeInUp">
-                        We design things with love<br>and passion.
-                    </h2>
-                    <a href="#portfolio" class="offer__text-btn upper d-block m-auto animated fadeInUp go_to">Our works</a>
-                </div>
-                <div class="offer__features m-auto">
-                    <div class="offer__features-inner d-flex justify-content-between animated fadeInUp">
-                        <div class="offer__features-item text-center">
-                            <img src="images/dollar.png" alt="dollar">
-                            <span class="offer__features-item-text upper d-block">Fixed price projects</span>
-                        </div>
-                        <div class="offer__features-item">
-                            <img src="images/clock.png" alt="dollar">
-                            <span class="offer__features-item-text upper d-block">Receive on time</span>
-                        </div>
-                        <div class="offer__features-item">
-                            <img src="images/check.png" alt="dollar">
-                            <span class="offer__features-item-text upper d-block">Satisfaction guranteed</span>
+                <div class="row">
+                    <div class="col s12 d-flex align-items-center justify-content-center">
+                        <div class="offer text-center">
+                            <h1 class="offer__title upper mont wow fadeInDown">Доставка комплексных обедов за <br> <span class="offer__bold_letters">12 минут</span> </h1>
+                            <hr class="offer__hr">
+                            <p class="offer__text wow fadeInDown">Вам не нужно заранее готовить обед, искать столовую во время рабочего перерыва, и мыть посуду &mdash; мы позаботились о вас: уже приготовили и быстро доставим!</p>
+                            <a href= "#" class="my-btn offer__btn upper mont waves-effect waves-light go_to wow fadeInUp">Заказать обед</a>
+                            <a href= "#menu" class="my-btn offer__btn upper mont waves-effect waves-light go_to wow fadeInUp">Выбрать обед</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">Как это работает?</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l3">
+                    <div class="sevices__items">
+                        <div class="services__item">
+                            <div class="service__heading d-flex justify-content-center">
+                                <div class="service__icon d-flex justify-content-center align-items-center wow fadeInDown">
+                                    <span><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="service__typo">
+                                <div class="service__typo-wrapper text-center">
+                                    <h3 class="service__header mont upper wow fadeInDown">Выберите блюдо</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="sevices__items">
+                        <div class="services__item">
+                            <div class="service__heading d-flex justify-content-center">
+                                <div class="service__icon d-flex justify-content-center align-items-center wow fadeInDown">
+                                    <span><i class="fa fa-phone"></i></span>
+                                </div>
+                            </div>
+                            <div class="service__typo">
+                                <div class="service__typo-wrapper text-center">
+                                    <h3 class="service__header mont upper wow fadeInDown">Звоните нам</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="sevices__items">
+                        <div class="services__item">
+                            <div class="service__heading d-flex justify-content-center">
+                                <div class="service__icon d-flex justify-content-center align-items-center wow fadeInDown">
+                                    <span><i class="fa fa-clock-o"></i></span>
+                                </div>
+                            </div>
+                            <div class="service__typo">
+                                <div class="service__typo-wrapper text-center">
+                                    <h3 class="service__header mont upper wow fadeInDown">12 минут ожидания</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="sevices__items">
+                        <div class="services__item">
+                            <div class="service__heading d-flex justify-content-center">
+                                <div class="service__icon d-flex justify-content-center align-items-center wow fadeInDown">
+                                    <span><i class="fa fa-check"></i></span>
+                                </div>
+                            </div>
+                            <div class="service__typo">
+                                <div class="service__typo-wrapper text-center">
+                                    <h3 class="service__header mont upper wow fadeInDown">Наслаждайтесь вкусным обедом</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="services__footer-text text-center"><span class="color_red">* </span>Доставляем по городу с 11:00 до 17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">Меню</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="menu__controls d-flex justify-content-between">
+                        <span id="first_b" class="menu__control menu__control_active">Первые блюда</span>
+                        <span id="second_b" class="menu__control">Вторые блюда</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row fadeIn" id="firsts">
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Борщ со сметаной
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Суп гороховый
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Рассольник
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="row fadeIn d-none" id="seconds">
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Пюре с котлетой из свинины с овощами
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Паста с курицей в сливочном соусе и овощами
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+                <div class="col l4">
+                    <div class="menu__item relative text-center">
+                        <div class="menu__item-inner absolute">
+                            Рис со свининой и овощами
+                        </div>
+                        <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
+                            <a href="#" class="menu__btn absolute">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="menu__cost text-center">
+                        Цена: 280 руб.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="about" class="about">
         <div class="container">
-            <div class="about__inner relative">
-                <div class="about__inner-foto wow fadeInLeft">
-                    <img src="images/about-image.png" alt="About">
-                </div>
-                <div class="about__inner-desc absolute wow fadeIn">
-                    <h2 class="about__desc-number absolute">
-                        01
-                    </h2>
-                    <div class="about__desc-wrapper absolute">
-                        <h2 class="about__desc-header capitalize librefont">
-                            About us.
-                        </h2>
-                        <p class="about__desc-text">
-                            Analytics release series A financing launch party interaction design android angel investor. Vesting period social media sales conversion launch party rockstar incubator customer social proof graphical user interface technology supply chain. Non-disclosure agreement rockstar creative partner network launch party social proof paradigm shift long tail influencer.
-                        </p>
-                        <p class="about__desc-text">
-                            Monetization validation success. Seed round channels product
-                            management. Customer non-disclosure agreement strategy
-                            android growth hacking ramen buyer.
-                        </p>
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">About us</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
+                        <p class="block-heading__text wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus?</p>
                     </div>
-                    <div class="bottom-hr absolute">
-                        <span class="d-block f-left"></span>
-                        <span class="d-block f-left"></span>
-                        <span class="d-block f-left"></span>
-                        <span class="d-block f-left"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6">
+                    <div class="about__desc wow fadeIn">
+                        <div class="about__wrapper">
+                            <p class="about__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor 
+                                invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                                justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                                ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. 
+                                Lorem ipsum eat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6">
+                    <div class="about__desc wow fadeIn">
+                        <div class="about__wrapper about__wrapper-2">
+                            <p class="about__text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor 
+                                invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+                                justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                                ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. 
+                                Lorem ipsum eat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="about__carousel wow fadeIn">
+                        <div class="about__slide">
+                            <div class="about__slide-inner d-flex justify-content-between">
+                                <div class="about__item">
+                                    <div class="about__item-wrapper">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Md. khalil udin</h3>
+                                        <p class="about__mate-job">Head of Ideas</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-2">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Rubel Miah</h3>
+                                        <p class="about__mate-job">Load WordPress Developer</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-3">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Shmamim mia</h3>
+                                        <p class="about__mate-job">Sr. Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-4">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">John Doe</h3>
+                                        <p class="about__mate-job">Front End Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__slide">
+                            <div class="about__slide-inner d-flex justify-content-between">
+                                <div class="about__item">
+                                    <div class="about__item-wrapper">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Md. khalil udin</h3>
+                                        <p class="about__mate-job">Head of Ideas</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-2">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Rubel Miah</h3>
+                                        <p class="about__mate-job">Load WordPress Developer</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-3">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">Shmamim mia</h3>
+                                        <p class="about__mate-job">Sr. Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="about__item">
+                                    <div class="about__item-wrapper" id="mate-4">
+                                        <div class="about__item-inner">
+                                            <ul class="about__socials d-flex justify-content-between">
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                </li>
+                                                <li class="about__social">
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="about__mate-desc text-center">
+                                        <h3 class="about__mate-name mont upper">John Doe</h3>
+                                        <p class="about__mate-job">Front End Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="focus" class="focus">
-        <div class="container relative">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        02
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Our focus.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="focus__block-items d-flex justify-content-around wow fadeInUp">
-                <div class="focus__block-items-item text-center">
-                    <img src="images/sheets.png" alt="design">
-                    <h3 class="focus__block-items-item-header capitalize">Web design</h3>
-                    <p class="focus__block-items-item-text">
-                        Analytics release series A financing launch party
-                        interaction design android angel investor.
-                    </p>
-                </div>
-                <div class="focus__block-items-item text-center">
-                    <img src="images/map.png" alt="design">
-                    <h3 class="focus__block-items-item-header capitalize">UX design</h3>
-                    <p class="focus__block-items-item-text">
-                        Analytics release series A financing launch party
-                        interaction design android angel investor.
-                    </p>
-                </div>
-                <div class="focus__block-items-item text-center">
-                    <img src="images/pics.png" alt="design">
-                    <h3 class="focus__block-items-item-header capitalize">Photography</h3>
-                    <p class="focus__block-items-item-text">
-                        Analytics release series A financing launch party
-                        interaction design android angel investor.
-                    </p>
-                </div>
-                <div class="focus__block-items-item text-center">
-                    <img src="images/devices.png" alt="design">
-                    <h3 class="focus__block-items-item-header capitalize">App development</h3>
-                    <p class="focus__block-items-item-text">
-                        Analytics release series A financing launch party
-                        interaction design android angel investor.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="video" class="video">
-        <div class="container">
-            <div class="video__inner text-center">
-                <h2 class="video__inner-header capitalize wow zoomIn">Explore our awesomeness</h2>
-                <div class="video__play-button wow zoomIn">
-                    <img src="images/play-video.png" alt="play-video">
-                </div>
-                <p class="video__inner-text wow zoomIn">
-                    Click to play the video
-                </p>
-            </div>
-        </div>
-    </section>
-
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        03
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Portfolio.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">Latest Works</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
                     </div>
                 </div>
             </div>
-            <div class="portfolio__wrapper wow fadeInUp">
-                <div class="portfolio__wrapper-row d-flex justify-content-between">
-                    <div class="portfolio__wrapper-item relative" id="portfolio-1">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project one</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="portfolio__menu-wrapper">
+                        <ul class="portfolio__menu d-flex justify-content-between m-auto wow fadeInDown"> 
+                            <li class="portfolio__menu-item capitalize p-menu_active" id="all">All</li>
+                            <li class="portfolio__menu-item capitalize" id="branding">Branding</li>
+                            <li class="portfolio__menu-item capitalize" id="design">Design</li>
+                            <li class="portfolio__menu-item capitalize" id="development">Development</li>
+                            <li class="portfolio__menu-item capitalize" id="stragedy">Stragedy</li>
+                        </ul>
                     </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-2">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project two</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-3">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project three</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4 s12 branding">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Branding</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__wrapper-row d-flex justify-content-between">
-                    <div class="portfolio__wrapper-item relative" id="portfolio-4">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project four</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-5">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project five</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-6">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project six</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
+                <div class="col l4 s12 design">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Design</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__wrapper-row d-flex justify-content-between">
-                    <div class="portfolio__wrapper-item relative" id="portfolio-7">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project seven</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
+                <div class="col l4 s12 development">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Development</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-8">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
-                            </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project eight</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
+                </div>
+                <div class="col l4 s12 stragedy">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Stragedy</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio__wrapper-item relative" id="portfolio-9">
-                        <div class="portfolio__wrapper-inner absolute">
-                            <div class="portfolio__wrapper-inner-window">
-                                <img src="images/add.png" alt="add" class="d-block m-auto">
+                </div>
+                <div class="col l4 s12 design">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Design</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
-                            <div class="portfolio__wrapper-inner-footer text-center absolute">
-                               <h2 class="portfolio__wrapper-inner-footer-header capitalize">Project nine</h2>
-                                <div class="bottom-hr absolute">
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                    <span class="d-block f-left"></span>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12 development">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Development</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12 stragedy">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Stragedy</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12 branding">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Branding</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12 branding">
+                    <div class="portfolio__item wow zoomIn">
+                        <div class="portfolio__item-inner d-flex justify-content-center align-items-center">
+                            <div class="portfolio__desc text-center">
+                                <h3 class="portfolio__desc-title mont capitalize">Hair Dresser</h3>
+                                <p class="portfolio__desc-text">Branding</p>
+                                <a href="#" class="portfolio__btn upper d-flex justify-content-between">Views <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -409,818 +641,102 @@
             </div>
         </div>
     </section>
-
-    <section id="team" class="team">
-        <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        04
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Our team.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="team__wrapper">
-                <div class="team__wrapper-items d-flex justify-content-between wow fadeInUp">
-                    <div class="team__wrapper-items-item relative mate-orange-box" id="teammate-1">
-                        <div class="team__wrapper-item-typo absolute text-center">
-                            <h3 class="team__wrapper-item-name capitalize">Michael schmitt</h3>
-                            <p class="team__wrapper-item-text capitalize">Founder &amp; SEO</p>
-                        </div>
-                    </div>
-                    <div class="team__wrapper-items-item relative" id="teammate-2">
-                        <div class="team__wrapper-item-typo absolute text-center">
-                            <h3 class="team__wrapper-item-name capitalize">David Krämer</h3>
-                            <p class="team__wrapper-item-text capitalize">Lead developer</p>
-                        </div>
-                    </div>
-                    <div class="team__wrapper-items-item relative" id="teammate-3">
-                        <div class="team__wrapper-item-typo absolute text-center">
-                            <h3 class="team__wrapper-item-name capitalize">Anna Schröder</h3>
-                            <p class="team__wrapper-item-text capitalize">Designer</p>
-                        </div>
-                    </div>
-                    <div class="team__wrapper-items-item relative" id="teammate-4">
-                        <div class="team__wrapper-item-typo absolute text-center">
-                            <h3 class="team__wrapper-item-name capitalize">Jason Teichmann</h3>
-                            <p class="team__wrapper-item-text capitalize">Consultant</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="team__wrapper-desc relative wow fadeIn">
-                    <div class="team__wrapper-desc-item absolute">
-                        <img class="team__wrapper-desc-shape absolute" src="images/shape.png" id="shape">
-                        <div class="team__wrapper-desc-item-typo d-flex absolute team-desc-active animated" id="team__mate-1">
-                            <div class="team__about-mate">
-                                <h3 class="team__about-mate-header capitalize">About michael.</h3>
-                                <p class="team__about-mate-text">
-                                    Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar
-                                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding
-                                    facebook seed round A/B testing mass market.
-                                </p>
-                            </div>
-                            <div class="team__mate-socials d-flex align-items-center">
-                                <div class="team__mate-socials-share">
-                                    <a href="#"><img src="images/share.png" alt="share-via"></a>
-                                </div>
-                                <div class="team__mate-socials-vr"></div>
-                                <ul class="team__mate-socials-list">
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/facebook.png" alt="facebook">Facebook</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/twitter.png" alt="twitter">Twitter</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/linkedin.png" alt="li">LinkedIn</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/instagram.png" alt="instagram">Instagram</a>
-                                   </li>
-                               </ul>
-                            </div>
-                        </div>
-                        <div class="team__wrapper-desc-item-typo d-flex absolute" id="team__mate-2">
-                            <div class="team__about-mate">
-                                <h3 class="team__about-mate-header capitalize">About david.</h3>
-                                <p class="team__about-mate-text">
-                                    Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar
-                                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding
-                                    facebook seed round A/B testing mass market.
-                                </p>
-                            </div>
-                            <div class="team__mate-socials d-flex align-items-center">
-                                <div class="team__mate-socials-share">
-                                    <a href="#"><img src="images/share.png" alt="share-via"></a>
-                                </div>
-                                <div class="team__mate-socials-vr"></div>
-                                <ul class="team__mate-socials-list">
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/twitter.png" alt="twitter">Twitter</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/linkedin.png" alt="li">LinkedIn</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/instagram.png" alt="instagram">Instagram</a>
-                                   </li>
-                               </ul>
-                            </div>
-                        </div>
-                        <div class="team__wrapper-desc-item-typo d-flex absolute" id="team__mate-3">
-                            <div class="team__about-mate">
-                                <h3 class="team__about-mate-header capitalize">About anna.</h3>
-                                <p class="team__about-mate-text">
-                                    Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar
-                                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding
-                                    facebook seed round A/B testing mass market.
-                                </p>
-                            </div>
-                            <div class="team__mate-socials d-flex align-items-center">
-                                <div class="team__mate-socials-share">
-                                    <a href="#"><img src="images/share.png" alt="share-via"></a>
-                                </div>
-                                <div class="team__mate-socials-vr"></div>
-                                <ul class="team__mate-socials-list">
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/facebook.png" alt="facebook">Facebook</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/instagram.png" alt="instagram">Instagram</a>
-                                   </li>
-                               </ul>
-                            </div>
-                        </div>
-                        <div class="team__wrapper-desc-item-typo d-flex absolute" id="team__mate-4">
-                            <div class="team__about-mate">
-                                <h3 class="team__about-mate-header capitalize">About jason.</h3>
-                                <p class="team__about-mate-text">
-                                    Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth agile development branding. Backing facebook hackathon conversion startup scrum project niche market business-to-consumer paradigm shift traction. Rockstar
-                                    bandwidth twitter ownership success disruptive series A financing user experience buyer client social proof validation hypotheses. User experience crowdfunding
-                                    facebook seed round A/B testing mass market.
-                                </p>
-                            </div>
-                            <div class="team__mate-socials d-flex align-items-center">
-                                <div class="team__mate-socials-share">
-                                    <a href="#"><img src="images/share.png" alt="share-via"></a>
-                                </div>
-                                <div class="team__mate-socials-vr"></div>
-                                <ul class="team__mate-socials-list">
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/facebook.png" alt="facebook">Facebook</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/twitter.png" alt="twitter">Twitter</a>
-                                   </li>
-                                   <li class="team__mate-socials-item">
-                                       <a href="#"><img src="images/linkedin.png" alt="li">LinkedIn</a>
-                                   </li>
-                               </ul>
-                            </div>
+    <section id="touch" class="touch">
+        <div class="parallax-container touch-parallax-container">
+            <div class="parallax"><img src="img/second-bg.jpg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="touch__typo text-center">
+                            <h3 class="touch__title wow fadeInDown">Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</h3>
+                            <a class="waves-effect waves-light my-btn touch__btn upper wow fadeInDown">Get in touch</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="stats" class="stats">
-        <div class="container">
-            <div class="stats__wrapper d-flex justify-content-around">
-                <div class="stats__wrapper-item text-center wow zoomIn">
-                    <img src="images/statistic.png" alt="statistic">
-                    <h2 class="stats__wrapper-num">12,458+</h2>
-                    <p class="stats__wrapper-text capitalize">
-                        Project complete
-                    </p>
-                    <img src="images/statistic-dot.png" alt="stats-dot">
-                </div>
-                <div class="stats__wrapper-item text-center wow zoomIn">
-                    <img src="images/user.png" alt="user">
-                    <h2 class="stats__wrapper-num">1,796+</h2>
-                    <p class="stats__wrapper-text capitalize">
-                        Satisfield clients
-                    </p>
-                    <img src="images/user-dot.png" alt="user-dot">
-                </div>
-                <div class="stats__wrapper-item text-center wow zoomIn">
-                    <img src="images/heart.png" alt="heart">
-                    <h2 class="stats__wrapper-num">1,000+</h2>
-                    <p class="stats__wrapper-text capitalize">
-                        Positive feedbacks
-                    </p>
-                    <img src="images/heart-dot.png" alt="heart-dot">
-                </div>
-                <div class="stats__wrapper-item text-center wow zoomIn">
-                    <img src="images/present.png" alt="present">
-                    <h2 class="stats__wrapper-num">1,500+</h2>
-                    <p class="stats__wrapper-text capitalize">
-                        Freebies released
-                    </p>
-                    <img src="images/present-dot.png" alt="present-dot">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="steps" class="steps">
-        <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute fadeIn">
-                        05
-                    </span>
-                    <div class="block-title__inner-typo absolute wow zoomIn">
-                        <h2 class="block-title__inner-header capitalize librefont">
-                            Work steps.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="steps__wrapper">
-                <div class="steps__wrapper-inner">
-                    <div class="steps__wrapper-inner-item m-auto relative wow zoomIn">
-                        <div class="steps__item-desc absolute wow zoomIn">
-                            <div class="steps__item-desc-inner d-flex">
-                                <div class="steps__item-desc-inner-left relative">
-                                    <span class="steps__item-desc-inner-left-num librefont">01</span>
-                                    <hr class="steps__item-desc-inner-left-hr absolute">
-                                </div>
-                                <div class="steps__item-desc-inner-right">
-                                    <h3 class="steps__item-desc-inner-right-header capitalize">
-                                        Project understanding
-                                    </h3>
-                                    <p class="steps__item-desc-inner-right-text">
-                                        Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor
-                                        accelerator.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="steps__wrapper-inner-item m-auto relative wow zoomIn">
-                        <div class="steps__item-desc absolute wow zoomIn">
-                            <div class="steps__item-desc-inner d-flex">
-                                <div class="steps__item-desc-inner-left relative">
-                                    <span class="steps__item-desc-inner-left-num librefont">02</span>
-                                    <hr class="steps__item-desc-inner-left-hr absolute">
-                                </div>
-                                <div class="steps__item-desc-inner-right">
-                                    <h3 class="steps__item-desc-inner-right-header capitalize">
-                                        Research &amp; planning
-                                    </h3>
-                                    <p class="steps__item-desc-inner-right-text">
-                                        Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor
-                                        accelerator.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="steps__wrapper-inner-item m-auto relative wow zoomIn">
-                        <div class="steps__item-desc absolute wow zoomIn">
-                            <div class="steps__item-desc-inner d-flex">
-                                <div class="steps__item-desc-inner-left relative">
-                                    <span class="steps__item-desc-inner-left-num librefont">03</span>
-                                    <hr class="steps__item-desc-inner-left-hr absolute">
-                                </div>
-                                <div class="steps__item-desc-inner-right">
-                                    <h3 class="steps__item-desc-inner-right-header capitalize">
-                                        Wireframe &amp; design
-                                    </h3>
-                                    <p class="steps__item-desc-inner-right-text">
-                                        Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor
-                                        accelerator.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="steps__wrapper-inner-item m-auto relative wow zoomIn">
-                        <div class="steps__item-desc absolute wow zoomIn">
-                            <div class="steps__item-desc-inner d-flex">
-                                <div class="steps__item-desc-inner-left relative">
-                                    <span class="steps__item-desc-inner-left-num librefont">04</span>
-                                    <hr class="steps__item-desc-inner-left-hr absolute">
-                                </div>
-                                <div class="steps__item-desc-inner-right">
-                                    <h3 class="steps__item-desc-inner-right-header capitalize">
-                                        Development
-                                    </h3>
-                                    <p class="steps__item-desc-inner-right-text">
-                                        Buyer strategy incubator niche market startup. Entrepreneur non disclosure agreement MVP traction beta social media investor
-                                        accelerator.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        06
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Pricing table.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing__wrapper">
-                <div class="pricing__wrapper-inner d-flex justify-content-between wow fadeInUp">
-                    <div class="pricing__wrapper-inner-item text-center">
-                        <h2 class="pricing__wrapper-inner-item-header">Starter</h2>
-                        <div class="pricing__item-circle-wrapper m-auto">
-                            <div class="pricing__item-circle-wrapper-inner m-auto text-center">
-                                <h3 class="pricing__circle-header">$125</h3>
-                                <p class="pricing__circle-text capitalize">Per month</p>
-                            </div>
-                        </div>
-                        <div class="pricing__item-middle">
-                            <ul class="pricing__item-middle-list">
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">200Gb</span> Online storage
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">20</span> Files per day
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">2Tb</span> Monthly bandwidth
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Secure platform
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> 24/7 Customer support
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Fast &amp; reliable
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pricing__item-footer">
-                            <a href="#" class="pricing__item-footer-btn btn upper">Get started</a>
-                        </div>
-                    </div>
-                    <div class="pricing__wrapper-inner-item text-center">
-                        <h2 class="pricing__wrapper-inner-item-header">Ultimate</h2>
-                        <div class="pricing__item-circle-wrapper m-auto">
-                            <div class="pricing__item-circle-wrapper-inner m-auto text-center">
-                                <h3 class="pricing__circle-header">$195</h3>
-                                <p class="pricing__circle-text capitalize">Per month</p>
-                            </div>
-                        </div>
-                        <div class="pricing__item-middle">
-                            <ul class="pricing__item-middle-list">
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">800Gb</span> Online storage
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold capitalize">Ultimate</span> Files per day
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">10Tb</span> Monthly bandwidth
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Secure platform
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> 24/7 Customer support
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Fast &amp; reliable
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pricing__item-footer">
-                            <a href="#" class="pricing__item-footer-btn btn upper">Get started</a>
-                        </div>
-                    </div>
-                    <div class="pricing__wrapper-inner-item text-center">
-                        <h2 class="pricing__wrapper-inner-item-header">Proffesional</h2>
-                        <div class="pricing__item-circle-wrapper m-auto">
-                            <div class="pricing__item-circle-wrapper-inner m-auto text-center">
-                                <h3 class="pricing__circle-header">$145</h3>
-                                <p class="pricing__circle-text capitalize">Per month</p>
-                            </div>
-                        </div>
-                        <div class="pricing__item-middle">
-                            <ul class="pricing__item-middle-list">
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">200Gb</span> Online storage
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">20</span> Files per day
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <span class="pricing__bold upper">20Tb</span> Monthly bandwidth
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Secure platform
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> 24/7 Customer support
-                                </li>
-                                <li class="pricing__item-middle-list-item capitalize">
-                                    <i class="fa fa-check"></i> Fast &amp; reliable
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pricing__item-footer">
-                            <a href="#" class="pricing__item-footer-btn btn upper">Get started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="test" class="test">
-        <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        07
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Testimonials.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="test__wrapper">
-                <div class="test__wrapper-inner">
-                    <div class="test__carousel wow fadeIn">
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Melina albrecht</h3>
-                                            <p class="test__mate-job">Founder, TingTong</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Selin corvin</h3>
-                                            <p class="test__mate-job">Front-End</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Kevin bower</h3>
-                                            <p class="test__mate-job">Front-End, Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Jane Smith</h3>
-                                            <p class="test__mate-job">Design, SEO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Mark twice</h3>
-                                            <p class="test__mate-job">Design</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="test__carousel-item">
-                            <div class="test__carousel-item-inner relative">
-                                <div class="test__item-inner-preview absolute">
-                                    <img src="images/mate-img.png" alt="mate-img">
-                                </div>
-                                <div class="test__item-inner-preview-desc absolute">
-                                    <div class="test__item-desc-quotes absolute">
-                                        <span class="absolute test__item-quotes librefont">&#8220;</span>
-                                    </div>
-                                    <div class="test__item-desc-typo absolute">
-                                        <p class="test__item-desc-text">
-                                            Deployment ownership non-disclosure agreement  vesting period crowdfunding
-                                            success influencer partnership equity series A financing network effects user
-                                            experience crowdsource. Burn rate stock bootstrapping direct mailing release client traction creative facebook monetization crowdfunding rockstar.
-                                        </p>
-                                        <div class="test__item-desc-typo-footer">
-                                            <img src="images/melina.png" alt="melina">
-                                            <h3 class="test__mate-name capitalize">Mery once</h3>
-                                            <p class="test__mate-job">SEO</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="select-us" class="select-us">
-        <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        08
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Why select us?
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="select-us__wrapper">
-                <div class="select-us__wrapper-inner">
-                    <div class="select-us__row d-flex justify-content-between">
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/business.png" alt="business">
-                                <h3 class="select-us__row-item-header-title capitalize">Business
-                                growth</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/revisions.png" alt="revisions">
-                                <h3 class="select-us__row-item-header-title capitalize">Unlimited revisions</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/perfection.png" alt="perfection">
-                                <h3 class="select-us__row-item-header-title capitalize">Ultimate perfection</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="select-us__row d-flex justify-content-between">
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/exp.png" alt="experience">
-                                <h3 class="select-us__row-item-header-title capitalize">Smart experience</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/deadline.png" alt="deadline">
-                                <h3 class="select-us__row-item-header-title capitalize">Strict deadline</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="select-us__row-item wow zoomIn">
-                            <div class="select-us__row-item-header d-flex align-items-center">
-                                <img src="images/avard.png" alt="award">
-                                <h3 class="select-us__row-item-header-title capitalize">Award-winning company</h3>
-                            </div>
-                            <div class="select-us__row-item-article">
-                                <p class="select-us__row-item-article-text">
-                                    Success scrum project funding marketing seed money prototype innovator direct hackathon android angel investor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="select-us__footer text-center wow fadeInUp">
-                        <span class="select-us__footer-text">Start your journy with us now</span>
-                        <a href="#" class="select-us__footer-btn btn upper">Get started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="blog" class="blog">
         <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        09
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header capitalize librefont wow zoomIn">
-                            Our blog.
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">Recent blog posts</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
+                        <p class="block-heading__text wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus?</p>
                     </div>
                 </div>
             </div>
-            <div class="blog__wrapper">
-                <div class="blog__wrapper-inner d-flex justify-content-between">
-                    <div class="blog__inner-right wow zoomIn">
-                        <div class="blog__inner-right-item">
-                            <div class="blog__inner-right-item-pic relative">
-                                <div class="blog__inner-right-author absolute">
-                                    <span class="blog__inner-right-author-name upper">Damian schreiber</span>
-                                    <span class="blog__inner-right-author-date">December 10, 2018</span>
-                                </div>
-                            </div>
-                            <div class="blog__inner-right-typo">
-                                <h3 class="blog__inner-right-typo-header">
-                                    Facebook’s CNN livestream will test its place in the second screen era
-                                </h3>
-                                <p class="blog__inner-right-typo-text">
-                                    Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#" class="blog__read-more capitalize">Read full article »</a>
-                                </p>
-                            </div>
+            <div class="row">
+                <div class="col l5">
+                    <div class="blog__wrapper">
+                        <div class="blog__preview">
+                            <img src="img/blog-1.jpg" alt="blog-1">
                         </div>
-                        <div class="blog__inner-right-item">
-                            <div class="blog__inner-right-item-pic relative">
-                                <div class="blog__inner-right-author absolute">
-                                    <span class="blog__inner-right-author-name upper">Dorian gray</span>
-                                    <span class="blog__inner-right-author-date">May 3, 2017</span>
+                    </div>
+                </div>
+                <div class="col l7">
+                    <div class="blog__wrapper">
+                        <div class="blog__desc">
+                            <div class="blog__heading d-flex">
+                                <div class="blog__date mont">
+                                    <span class="blog__date-num d-block text-center">18</span>
+                                    <span class="blog__date-month upper d-block text-center">Oct</span>
+                                </div>
+                                <div class="blog__heading-titles">
+                                    <h3 class="blog__heading-title mont upper">Startup ideas needs to be funded </h3>
+                                    <p class="blog__heading-text italic">By <span class="blog_red">Khalil</span> Uddin in <span class="blog_red">Development</span></p>
                                 </div>
                             </div>
-                            <div class="blog__inner-right-typo">
-                                <h3 class="blog__inner-right-typo-header">
-                                    Twitter said why he will fall down
-                                </h3>
-                                <p class="blog__inner-right-typo-text">
-                                    Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#" class="blog__read-more capitalize">Read full article »</a>
+                            <div class="blog__article">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                    teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+                                    et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                                    Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                                    diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
                                 </p>
                             </div>
-                        </div>
-                        <div class="blog__inner-right-item">
-                            <div class="blog__inner-right-item-pic relative">
-                                <div class="blog__inner-right-author absolute">
-                                    <span class="blog__inner-right-author-name upper">Mathew Perry</span>
-                                    <span class="blog__inner-right-author-date">July 27, 2016</span>
-                                </div>
-                            </div>
-                            <div class="blog__inner-right-typo">
-                                <h3 class="blog__inner-right-typo-header">
-                                    Google Street View adds virtual reality support
-                                </h3>
-                                <p class="blog__inner-right-typo-text">
-                                    Traction seed money infographic accelerator pivot value proposition ownership business-to-consumer iteration market analytics paradigm <a href="#" class="blog__read-more capitalize">Read full article »</a>
-                                </p>
+                            <div class="blog__footer">
+                                <a href="#" class="blog__btn upper">Read more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="blog__inner-left">
-                        <div class="blog__inner-left-item wow zoomIn">
-                            <div class="blog__left-author">
-                                <span class="blog__left-author-name upper">Damian schreiber</span>
-                                <span class="blog__left-author-date">December 10, 2018</span>
-                            </div>
-                            <div class="blog__left-typo">
-                                <h3 class="blog__left-typo-header">
-                                    Facebook’s CNN livestream will test its
-                                </h3>
-                                <p class="blog__left-typo-text">
-                                    Traction seed money infographic accelerator pivot value
-                                    proposition ownership business-to-consumer iteration market
-                                    analytics paradigm <a href="#" class="blog__left-read-more capitalize">Read full article »</a>
-                                </p>
-                            </div>
+                </div>
+            </div>
+            <hr class="blog__hr">
+            <div class="row">
+                <div class="col l5">
+                    <div class="blog__wrapper">
+                        <div class="blog__preview">
+                            <img src="img/blog-2.jpg" alt="blog-1">
                         </div>
-                        <div class="blog__inner-left-item wow zoomIn">
-                            <div class="blog__left-author">
-                                <span class="blog__left-author-name upper">Dorian gray</span>
-                                <span class="blog__left-author-date">May 3, 2017</span>
+                    </div>
+                </div>
+                <div class="col l7">
+                    <div class="blog__wrapper">
+                        <div class="blog__desc">
+                            <div class="blog__heading d-flex">
+                                <div class="blog__date mont">
+                                    <span class="blog__date-num d-block text-center">18</span>
+                                    <span class="blog__date-month upper d-block text-center">Oct</span>
+                                </div>
+                                <div class="blog__heading-titles">
+                                    <h3 class="blog__heading-title mont upper">Startup ideas needs to be funded </h3>
+                                    <p class="blog__heading-text italic">By <span class="blog_red">Khalil</span> Uddin in <span class="blog_red">Development</span></p>
+                                </div>
                             </div>
-                            <div class="blog__left-typo">
-                                <h3 class="blog__left-typo-header">
-                                    Twitter said why he will fall down
-                                </h3>
-                                <p class="blog__left-typo-text">
-                                    Traction seed money infographic accelerator pivot value
-                                    proposition ownership business-to-consumer iteration market
-                                    analytics paradigm <a href="#" class="blog__left-read-more capitalize">Read full article »</a>
+                            <div class="blog__article">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                    teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+                                    et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                                    Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                                    diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
                                 </p>
                             </div>
-                        </div>
-                        <div class="blog__inner-left-item wow zoomIn">
-                            <div class="blog__left-author">
-                                <span class="blog__left-author-name upper">Mathew Perry</span>
-                                <span class="blog__left-author-date">July 27, 2016</span>
-                            </div>
-                            <div class="blog__left-typo">
-                                <h3 class="blog__left-typo-header">
-                                    Google Street View adds virtual reality support
-                                </h3>
-                                <p class="blog__left-typo-text">
-                                    Traction seed money infographic accelerator pivot value
-                                    proposition ownership business-to-consumer iteration market
-                                    analytics paradigm <a href="#" class="blog__left-read-more capitalize">Read full article »</a>
-                                </p>
+                            <div class="blog__footer">
+                                <a href="#" class="blog__btn upper">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -1228,117 +744,164 @@
             </div>
         </div>
     </section>
-
-    <section id="subscribe" class="subscribe">
+    <section id="test" class="test">
         <div class="container">
-            <div class="subscribe__wrapper text-center">
-               <h2 class="subscribe__wrapper-title wow zoomIn">Subscribe to Newsletter</h2>
-                <div class="subscribe__wrapper-inner m-auto wow zoomIn">
-                    <form action="" method="post" class="subscribe__form relative">
-                        <input type="email" class="subscribe__form-input absolute" placeholder="Enter your email">
-                        <button class="subscribe__form-btn absolute upper">Subscribe now</button>
-                    </form>
+            <div class="row">
+                <div class="col s12">
+                    <div class="test__wrapper">
+                        <div class="test__carousel wow fadeIn">
+                            <div class="test__slide">
+                                <div class="test__slide-inner">
+                                    <div class="test__clients d-flex justify-content-between align-items-center">
+                                        <img src="img/client-1.png" alt="1">
+                                        <img src="img/client-2.png" alt="1">
+                                        <img src="img/client-3.png" alt="1">
+                                        <img src="img/client-4.png" alt="1">
+                                        <img src="img/client-5.png" alt="1">
+                                    </div>
+                                    <div class="test__typo text-center">
+                                        <p class="test__text italic d-block m-auto">
+                                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                        </p>
+                                        <span class="test__author">John Doe, Google Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test__slide">
+                                <div class="test__slide-inner">
+                                    <div class="test__clients d-flex justify-content-between align-items-center">
+                                        <img src="img/client-1.png" alt="1">
+                                        <img src="img/client-2.png" alt="1">
+                                        <img src="img/client-3.png" alt="1">
+                                        <img src="img/client-4.png" alt="1">
+                                        <img src="img/client-5.png" alt="1">
+                                    </div>
+                                    <div class="test__typo text-center">
+                                        <p class="test__text italic d-block m-auto">
+                                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                        </p>
+                                        <span class="test__author">Dorian Gray, Apple Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test__slide">
+                                <div class="test__slide-inner">
+                                    <div class="test__clients d-flex justify-content-between align-items-center">
+                                        <img src="img/client-1.png" alt="1">
+                                        <img src="img/client-2.png" alt="1">
+                                        <img src="img/client-3.png" alt="1">
+                                        <img src="img/client-4.png" alt="1">
+                                        <img src="img/client-5.png" alt="1">
+                                    </div>
+                                    <div class="test__typo text-center">
+                                        <p class="test__text italic d-block m-auto">
+                                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                                        </p>
+                                        <span class="test__author">Bill Gates, Microsoft Inc.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer id="footer" class="footer">
+    <section id="feedback" class="feedback">
         <div class="container">
-            <div class="block-title text-center d-block">
-                <div class="block-title__inner relative">
-                    <span class="block-title__inner-num absolute wow fadeIn">
-                        10
-                    </span>
-                    <div class="block-title__inner-typo absolute">
-                        <h2 class="block-title__inner-header librefont wow zoomIn">
-                            Get in Touch
-                        </h2>
-                        <p class="block-title__inner-text wow zoomIn">
-                            We understand your requirement and provide quality works.
-                        </p>
+            <div class="row">
+                <div class="col s12">
+                    <div class="block-heading text-center">
+                        <h2 class="block-heading__title mont upper wow fadeInDown">Get in touch</h2>
+                        <hr class="block-heading__hr wow fadeInDown">
+                        <p class="block-heading__text wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus?</p>
                     </div>
                 </div>
             </div>
-            <div class="footer__wrapper">
-                <div class="footer__wrapper-inner">
-                    <div class="footer__inner-feedback">
-                        <form action="" method="post" class="footer__form m-auto">
-                            <div class="footer__form-row d-flex justify-content-between">
-                                <input type="text" class="footer__input wow zoomIn" placeholder="Your Name">
-                                <input type="email" class="footer__input wow zoomIn" placeholder="Your Email">
+            <div class="row">
+                <div class="col l3 s12 feedback__contacts-wrapper">
+                    <div class="contacts-wrapper wow fadeInLeft">
+                        <div class="contacts d-flex">
+                            <div class="contacts-icon">
+                                <i class="fa fa-map-marker"></i>
                             </div>
-                            <div class="footer__form-row d-flex justify-content-between">
-                                <input type="text" class="footer__input wow zoomIn" placeholder="Subject">
-                                <input type="text" class="footer__input wow zoomIn" placeholder="Project Budget">
+                            <div class="contacts__desc">
+                                <h3 class="contacts__title upper mont">Adress</h3>
+                                <p class="contacts__text">
+                                    312, 7th Ave, New York<br>
+                                    NY 101200, United States of America
+                                </p>
                             </div>
-                            <div class="footer__form-row">
-                                <textarea name="footer__area" id="footer__are" placeholder="Your Message" class="footer__input footer__textarea wow zoomIn"></textarea>
+                        </div>
+                    </div>
+                    <div class="contacts-wrapper wow fadeInLeft">
+                        <div class="contacts d-flex">
+                            <div class="contacts-icon">
+                                <i class="fa fa-mobile"></i>
                             </div>
-                            <div class="footer__form-row">
-                                <button class="footer__btn btn upper m-auto d-block wow zoomIn">Send message</button>
+                            <div class="contacts__desc">
+                                <h3 class="contacts__title upper mont">Hotline(24x7)</h3>
+                                <p class="contacts__text">
+                                    +23124124, +41241241<br>
+                                    +2412412414
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="contacts-wrapper wow fadeInLeft">
+                        <div class="contacts d-flex">
+                            <div class="contacts-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contacts__desc">
+                                <h3 class="contacts__title upper mont">E-mail</h3>
+                                <p class="contacts__text">
+                                    shapedtheme@gmail.com<br>
+                                    khalilkode@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l8 offset-l1">
+                    <div class="feedback__form-wrapper">
+                        <form action="" method="post" class="feedback__form d-flex justify-content-between flex-wrap" id="form">
+                            <input type="text" class="feedback__name feedback__input wow zoomIn" name="name" id="name" placeholder="YOUR NAME">
+                            <input type="email" class="feedback__mail feedback__input wow zoomIn" name="email" id="email" placeholder="YOUR E-MAIL">
+                            <input type="text" class="feedback__subject feedback__input wow zoomIn" name="subject" id="subject" placeholder="YOUR SUBJECT">
+                            <input type="text" class="feedback__company feedback__input wow zoomIn" name="company" id="company" placeholder="YOUR COMPANY">
+                            <textarea name="textarea" id="f-textarea" class="feedback__input feedback__textarea wow zoomIn" placeholder="WRITE YOUR MESSAGE"></textarea>
+                            <button class="feedback__btn upper waves-effect waves-light wow zoomIn">Send message</button>
+                            <span class="feedback__text wow zoomIn"><span class="color_red">* </span>We’ll contact you as as possible. We don’t reply on Monday.</span>
                         </form>
                     </div>
-                    <div class="footer__inner-contacts">
-                        <div class="footer__inner-contacts-block relative wow fadeInUp">
-                           <div class="footer__inner-contacts-block-wrapper d-flex justify-content-between">
-                               <div class="footer__contacts-item d-flex align-items-center justify-content-center">
-                                   <img src="images/footer-logo.png" alt="Alexis">
-                               </div>
-                               <div class="footer__contacts-item d-flex align-items-center justify-content-center">
-                                   <div class="footer__contacts-item-inner">
-                                       <h3 class="footer__contacts-header">
-                                           Alexis LLC.
-                                       </h3>
-                                       <p class="footer__contacts-text">
-                                           Alexis LLC.
-                                           4125 Brighton Circle Road
-                                           Little Falls, MN 56345
-                                       </p>
-                                   </div>
-                               </div>
-                               <div class="footer__contacts-item d-flex align-items-center justify-content-center">
-                                   <div class="footer__contacts-item-inner">
-                                       <h3 class="footer__contacts-header">
-                                           Alexis LLC UK.
-                                       </h3>
-                                       <p class="footer__contacts-text">
-                                           Alexis LLC UK.
-                                           81 Golden Knowes Road
-                                           FRESHFIELD   L37 6TP
-                                       </p>
-                                   </div>
-                               </div>
-                               <div class="footer__contacts-item d-flex align-items-center justify-content-center">
-                                   <div class="footer__contacts-item-inner">
-                                       <h3 class="footer__contacts-header">
-                                           Follow Us.
-                                       </h3>
-                                       <ul class="footer__contacts-list d-flex">
-                                           <li class="footer__contacts-list-item">
-                                               <a href="#"><img src="images/facebook2.png" alt="facebook"></a>
-                                           </li>
-                                           <li class="footer__contacts-list-item">
-                                               <a href="#"><img src="images/twitter2.png" alt="twitter"></a>
-                                           </li>
-                                           <li class="footer__contacts-list-item">
-                                               <a href="#"><img src="images/instagram2.png" alt="instagram"></a>
-                                           </li>
-                                           <li class="footer__contacts-list-item">
-                                               <a href="#"><img src="images/gplus.png" alt="fgplus"></a>
-                                           </li>
-                                       </ul>
-                                   </div>
-                               </div>
-                           </div>
-                            <div class="bottom-hr absolute">
-                                <span class="d-block f-left"></span>
-                                <span class="d-block f-left"></span>
-                                <span class="d-block f-left"></span>
-                                <span class="d-block f-left"></span>
-                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="footer__contacts text-center">
+                        <div class="footer__socials-wrapper m-auto">
+                            <ul class="footer__socials d-flex justify-content-between">
+                                <li class="footer__social wow zoomIn">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li class="footer__social wow zoomIn">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="footer__social wow zoomIn">
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li class="footer__social wow zoomIn">
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </li>
+                            </ul>
                         </div>
+                        <hr class="footer__hr wow zoomIn">
+                        <p class="footer__text wow zoomIn">&copy; 2018 Startup, Designed by ShapedTheme</p>
                     </div>
                 </div>
             </div>
@@ -1346,12 +909,10 @@
     </footer>
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<!-- WoW JS -->
+<!-- Materialize js -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- wow js -->
 <script type="text/javascript" src="js/wow.min.js"></script>
-<!-- Activate wow.min.js -->
-<script>new WOW().init();</script>
-<!-- Slick Carousel -->
-<script type="text/javascript" src="js/slick.min.js"></script>
 <!-- Main JS -->
 <script type="text/javascript" src="js/main.js"></script>
 <!--[if lt IE 9]>

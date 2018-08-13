@@ -1,4 +1,0 @@
-[2018-05-02 17:04:13] layer "12,458+": Expected end of input but "+" found.
-[2018-05-02 17:04:13] layer "1,796+": Expected end of input but "+" found.
-[2018-05-02 17:04:13] layer "1,000+": Expected end of input but "+" found.
-[2018-05-02 17:04:13] layer "1,500+": Expected end of input but "+" found.
