@@ -19,7 +19,7 @@
 	/* Hero Section */
 	.header__menu-btn { display: block; margin-top: 10px; }
 
-	.header__row-toggler { -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+	.header__row-toggler { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 	.header__nav { display: none; }
 
@@ -89,7 +89,7 @@
 
 	.test { padding: 50px 0 100px 0; }
 
-	#form .feedback__input { width: 100%; }
+	#form { width: 100%; }
 
 	.footer__site-name { font-size: 20px; }
 
