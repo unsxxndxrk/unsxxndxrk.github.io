@@ -1,69 +1,100 @@
-$(document).ready(function() {
-	/* Smooth Scrolling */
-	$('.go_to').click( function(){ 
+$(document).ready(function(){
+    /* Smooth Scrolling */
+    $('.go_to').click( function(){ 
 	var scroll_el = $(this).attr('href'); 
         if ($(scroll_el).length != 0) { 
-	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); 
+	       $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
         }
-	    return false; 
+	    return false;
     });
-
-	/* Activate wow.min.js */
-	new WOW().init();
-
-	/* Init Parallax */
-	$(document).ready(function(){
-    	$('.parallax').parallax();
-  	});
-
-	/* Init Sidebar */
-    $(document).ready(function(){
-    	$('.sidenav').sidenav();
-  	});
-
-  	/* About Carousel */
-  	$('.about__carousel').slick({
-	  infinite: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  dots: false,
-	  arrows: true,
-	  autoplay: true,
-	  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        arrows: false
-      }
-    }
-  ]
+    
+    /* Scroll Menu */
+	$(window).scroll(function(){
+		var wScroll = $(this).scrollTop();
+		// Activate menu
+		if (wScroll > 20) {
+			$('.header__navigation').addClass('nav-active');
+		}
+		else {
+			$('.header__navigation').removeClass('nav-active');
+		};
 	});
 
-	/* Portfolio Gallery */
-	$(function() {
-  	$('.portfolio__menu-item').click(function () {
-      var get_id = this.id;
-      var get_current = $('.portfolio .row:nth-child(3) .' + get_id);
-      $('.portfolio .row:nth-child(3) .col').not(get_current).hide(500);
-      get_current.show(500);
-
-      var menu_item = $('.portfolio__menu #' + get_id);
-      $('.portfolio__menu .portfolio__menu-item').not(menu_item).removeClass('p-menu_active');
-      menu_item.addClass('p-menu_active');
-  	});
-
-    $('#all').click(function () {
-      $('.portfolio .row:nth-child(3) .col').show(500);
+	 /* Burger Menu */
+	$(".header__menu-button").click(function() {   
+        $(".slide-out-menu").toggleClass("menu-open");
     });
-  });
 
-  /* Testimonials Carousel */
-	$('.test__carousel').slick({
-	  infinite: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  dots: true,
-	  arrows: false,
-	  autoplay: true
-	});
+    $(".menu-close").click(function(){
+    	$(".slide-out-menu").removeClass("menu-open");
+    });
+
+    $(document).click(function(event) {  
+        if ($(event.target).closest(".header__menu-button").length) return;
+        $(".slide-out-menu").removeClass("menu-open");
+        event.stopPropagation();
+    });
+    
+    /* Team Slider */
+    $('#teammate-1').click(function(){
+        $(this).toggleClass('mate-orange-box');
+        $('#teammate-2').removeClass('mate-green-box');
+        $('#teammate-3').removeClass('mate-purple-box');
+        $('#teammate-4').removeClass('mate-yellow-box');
+        $('#shape').animate({'left':'100px'}, 300);
+        $('#team__mate-1').toggleClass('team-desc-active');
+        $('#team__mate-2, #team__mate-3, #team__mate-4').removeClass('team-desc-active').removeClass('bounceInUp');
+    });
+    
+    $('#teammate-2').click(function(){
+        $(this).toggleClass('mate-green-box');
+        $('#teammate-1').removeClass('mate-orange-box');
+        $('#teammate-3').removeClass('mate-purple-box');
+        $('#teammate-4').removeClass('mate-yellow-box');
+        $('#shape').animate({'left':'400px'}, 300);
+        $('#team__mate-2').toggleClass('team-desc-active');
+        $('#team__mate-1, #team__mate-3, #team__mate-4').removeClass('team-desc-active');
+    });
+    
+    $('#teammate-3').click(function(){
+        $(this).toggleClass('mate-purple-box');
+        $('#teammate-1').removeClass('mate-orange-box');
+        $('#teammate-2').removeClass('mate-green-box');
+        $('#teammate-4').removeClass('mate-yellow-box');
+        $('#shape').animate({'left':'700px'}, 300);
+        $('#team__mate-3').toggleClass('team-desc-active');
+        $('#team__mate-1, #team__mate-2, #team__mate-4').removeClass('team-desc-active');
+    });
+    
+    $('#teammate-4').click(function(){
+        $(this).toggleClass('mate-yellow-box');
+        $('#teammate-1').removeClass('mate-orange-box');
+        $('#teammate-3').removeClass('mate-purple-box');
+        $('#teammate-2').removeClass('mate-green-box');
+        $('#shape').animate({'left':'1000px'}, 300);
+        $('#team__mate-4').toggleClass('team-desc-active');
+        $('#team__mate-1, #team__mate-3, #team__mate-2').removeClass('team-desc-active');
+    });
+    
+    /* Testimonials Slider */
+    $('.test__carousel').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true
+    });
+    
+    /* Blog Auto-slider */
+    $('.blog__inner-right').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true
+    });
 });
