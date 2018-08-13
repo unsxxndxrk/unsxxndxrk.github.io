@@ -488,14 +488,16 @@ ul, li {
 
 .about__btn {
     border: 2px solid #4b9d0e;
-    color: #4b9d0e;
+    color: #fff;
+    background: #4b9d0e;
     float: right;
     margin-top: 50px;
     font-weight: 500;
 }
 
 .about__btn:hover {
-    color: #fff;
+    color: #4b9d0e;
+    background: #fff;
 }
 
 
@@ -647,15 +649,19 @@ ul, li {
   font-size: 15px;
   margin-bottom: 26px;
   border-radius: 10px;
+  background: #fff;
 }
+
+#form .feedback__input:nth-child(2) { width: 47.5% }
 
 /*#form .feedback__input:nth-child(3) { width: 100%; }*/
 
 #form .feedback__btn {
   padding: 9px 35px;
   border: 2px solid #4b9d0e;
+  color: #fff;
   font-size: 16px;
-  background: transparent;
+  background: #4b9d0e;
   outline: none;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
