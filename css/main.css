@@ -649,17 +649,20 @@ ul, li {
   border-radius: 10px;
 }
 
+/*#form .feedback__input:nth-child(3) { width: 100%; }*/
+
 #form .feedback__btn {
-  padding: 15px 30px;
+  padding: 9px 35px;
   border: 2px solid #4b9d0e;
-  font-size: 15px;
+  font-size: 16px;
   background: transparent;
   outline: none;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 100%;
+  width: 47.5%;
+  font-weight: 600;
 }
 
 #form .feedback__btn:hover {
@@ -669,6 +672,15 @@ ul, li {
 }
 
 .color_red { color: #c0301c; }
+
+.thank .thank__inner {
+    height: 100px;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 0;
+    border: 3px solid #4b9d0e;
+    display: none;
+}
 
 /* Footer Section */
 .footer {

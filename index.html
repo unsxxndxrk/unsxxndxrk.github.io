@@ -419,13 +419,17 @@
             <div class="row">
                 <div class="col s12">
                     <div class="feedback__form-wrapper">
-                        <form action="" method="post" class="feedback__form d-flex justify-content-between flex-wrap" id="form">
-                            <input type="text" class="feedback__name feedback__input wow zoomIn" name="name" id="name" placeholder="Имя">
-                            <input type="email" class="feedback__mail feedback__input wow zoomIn" name="phone" id="phone" placeholder="Телефон">
-                            <input type="text" class="feedback__subject feedback__input wow zoomIn" name="email" id="email" placeholder="Почта">
-                            <input type="text" class="feedback__company feedback__input wow zoomIn" name="dumber_of_dinner" id="number_of_dinner" placeholder="Номер комплексного обеда">
-                            <button class="feedback__btn upper waves-effect waves-light wow zoomIn">Заказать обед</button>
+                        <form action="sendmail.php" data-show=".thank__inner" data-them="Тема" class="feedback__form d-flex justify-content-between flex-wrap" id="form">
+                            <input type="text" class="feedback__name feedback__input wow zoomIn" name="name" data-name="Имя: " id="name" placeholder="Имя">
+                            <input type="email" class="feedback__mail feedback__input wow zoomIn" name="phone" data-required data-name="Телефон: " id="phone" placeholder="Телефон">
+                            <input type="text" class="feedback__company feedback__input wow zoomIn" name="number_of_dinner" data-required id="number_of_dinner" placeholder="Номер комплексного обеда">
+                            <button type="submit" class="feedback__input text-center feedback__btn upper waves-effect waves-light wow zoomIn">Заказать обед</button>
                         </form>
+                        <div class="thank">
+                            <div class="thank__inner">
+                                Ваш заказ оформлен
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,6 +507,8 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <!-- Materialize js -->
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- Send Email -->
+<script type="text/javascript" src="js/jquery.sendFormLP.js"></script>
 <!-- wow js -->
 <script type="text/javascript" src="js/wow.min.js"></script>
 <!-- slick js -->
