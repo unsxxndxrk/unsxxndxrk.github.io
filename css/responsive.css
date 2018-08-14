@@ -2,6 +2,12 @@
 @media screen and (max-width: 1200px) {
 	.container { width: 90%; }
 
+	.header__menu-btn { display: block; margin-top: 10px; }
+
+	.header__row-toggler { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+	.header__nav { display: none; }
+
 	.header__nav { width: auto; float: none; }
 
 	.menu__controls { padding: 20px 300px 50px 300px; }
@@ -16,13 +22,6 @@
 
 /* 1024 - 1079 px */
 @media screen and (max-width: 1079px) {
-	/* Hero Section */
-	.header__menu-btn { display: block; margin-top: 10px; }
-
-	.header__row-toggler { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-	.header__nav { display: none; }
-
 	.menu__controls { padding: 20px 250px 50px 250px; }
 
 	.offer .offer__text { padding: 0 100px; }
@@ -107,12 +106,6 @@
 
 	.parallax-container { padding: 35px 0 100px 0; }
 
-	.offer { padding-top: 50px; }
-}
-
-
-/* 425 - 479 px */
-@media screen and (max-width: 479px) {
 	.offer .offer__title { font-size: 20px; }
 
 	.offer .offer__text { font-size: 14px; }
@@ -121,6 +114,12 @@
 
 	.block-heading__title { font-size: 25px; }
 
+	.offer { padding-top: 50px; }
+}
+
+
+/* 425 - 479 px */
+@media screen and (max-width: 479px) {
 	.services, .menu, .about, .company, .feedback { padding: 50px 0 }
 
 	.footer .parallax-container { padding: 50px 0 0 0; }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>БыстрыйОбед</title>
+    <title>Горячая Доставка</title>
     <meta name="author" content="Zaviryukha Igor">
     <meta name="description" content="Landing page">
     <meta name="keywords" content="landing, page">
@@ -52,10 +52,10 @@
                      </li>
                 </ul>
                 <div class="row align-items-center d-flex justify-content-between">
-                    <div class="col s1">
-                        <span class="header__logo mont wow fadeIn">БыстрыйОбед</span>
+                    <div class="col l4 m6 s7">
+                        <span class="header__logo mont wow fadeIn">Горячая <i class="fa fa-cutlery"></i> Доставка</span>
                     </div>
-                    <div class="col s9 offset-s2 justify-content-between header__row-toggler">
+                    <div class="col s6 offset-s2 justify-content-between header__row-toggler">
                         <ul class="header__nav d-flex justify-content-between mont wow fadeIn align-items-center">
                              <li class="header__nav-item">
                                  <a href="#menu" class="go_to">Меню</a>
@@ -201,7 +201,9 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                            <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Борщ со сметаной" data-index="0">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
@@ -216,7 +218,9 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                           <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Суп гороховый" data-index="1">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
@@ -231,7 +235,9 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                            <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Рассольник" data-index="2">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
@@ -248,7 +254,9 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                            <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Пюре с котлетой из свинины с овощами" data-index="3">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
@@ -263,7 +271,9 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                            <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Паста с курицей в сливочном соусе и овощами" data-index="4">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
@@ -278,11 +288,20 @@
                             </div>
                         </div>
                         <div class="menu__item-inner-wrap d-flex justify-content-center align-items-center absolute">
-                            <a href="#feedback" class="menu__btn go_to absolute">Заказать</a>
+                            <span class="menu__btn absolute d-flex justify-content-center align-items-center" data-food="Рис со свининой и овощами" data-index="5">
+                                Выбрать
+                            </span>
                         </div>
                     </div>
                     <div class="menu__cost text-center">
                         Цена: 160 руб.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="menu__confirm text-center">
+                        <a href="#feedback" id="confirm" class="go_to my-btn menu__confirm-btn">Оформить заказ</a>
                     </div>
                 </div>
             </div>
@@ -431,7 +450,7 @@
 
                             <input type="text" class="feedback__name feedback__input wow zoomIn" name="Имя" id="name" placeholder="Имя">
                             <input type="text" class="feedback__phone feedback__input wow zoomIn" name="Телефон" id="phone" placeholder="Телефон" required>
-                            <input type="text" class="feedback__company feedback__input wow zoomIn" name="Номер комплексного обеда" required id="number_of_dinner" placeholder="Номер комплексного обеда">
+                            <input type="text" class="feedback__company feedback__input wow zoomIn" name="Название блюд" required id="number_of_dinner" placeholder="Название блюд">
                             <button type="submit" class="feedback__input text-center feedback__btn upper waves-effect waves-light wow zoomIn">Заказать обед</button>
                         </form>
                         <div class="thank">
@@ -453,7 +472,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l4 m6 s12 wow fadeInLeft">
-                         <h3 class="footer__site-name">БыстрыйОбед</h3>
+                         <h3 class="footer__site-name">Горячая Доставка</h3>
                          <ul class="footer__nav"> 
                              <li>
                                  <a href="#header" class="go_to">Домой</a>
@@ -505,7 +524,7 @@
                 <div class="row">
                      <div class="col s12">
                          <div class="footer__rights">
-                            <p class="footer__text wow fadeInLeft">&copy; 2018 БыстрыйОбед, Все права защищены</p>
+                            <p class="footer__text wow fadeInLeft">&copy; 2018 Горячая Доставка, Все права защищены</p>
                          </div>
                      </div>
                 </div>

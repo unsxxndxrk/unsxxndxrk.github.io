@@ -68,4 +68,55 @@ $(document).ready(function() {
         });
         return false;
     });
+
+    
+
+    /* Choose menu */
+    var
+        chooseBtns  = document.getElementsByClassName('menu__btn'),
+        foodArray   = [],
+        namesOfFood = document.getElementById('number_of_dinner'),
+        confirm     = document.getElementById('confirm');
+
+
+    for (var i = 0; i < chooseBtns.length; i++) {
+        chooseBtns[i].addEventListener('click', choose);
+    }
+
+    function choose() {
+        var index = this.getAttribute('data-index');
+
+        if (!this.classList.contains('choosed')) {
+            var 
+                food  = this.getAttribute('data-food');
+
+            this.innerHTML = '<i class="fa fa-check absolute"></i>';
+            this.classList.add('choosed');
+
+            foodArray[index] = food;
+            console.log(foodArray);
+        } else {
+            delete foodArray[index];
+            console.log(foodArray);
+
+            this.innerHTML = 'Выбрать';
+            this.classList.remove('choosed');
+        }
+    }
+
+    confirm.onclick = function() {
+        var 
+            endFoodArray = [];
+
+        for (var j = 0; j < foodArray.length; j++) {
+            if (typeof foodArray[j] !== 'undefined' && foodArray[j] !== null) {
+                endFoodArray.push(foodArray[j]);
+            } else {
+                continue;
+            }
+        }
+
+        var foodList = endFoodArray.join(', ');
+        namesOfFood.value = foodList;
+    }
 });
