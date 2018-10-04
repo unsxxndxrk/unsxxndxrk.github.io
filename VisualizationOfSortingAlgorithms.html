@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visualization of Sorting Algorithms</title>
+    <link rel="stylesheet" href="VisualizationOfSortingAlgorithms.css">
+</head>
+<body>
+    <div class="main">
+        <h1 style="text-align: center">Visualization of Sorting Algorithms</h1>
+        <div style="text-align: center"><em>Insertion Sorting</em></div>
+        <div class="container">
+            <div class="items" id="items">
+               
+            </div>
+            <div class="button-set">
+                <div class="number">
+                    <input type="number" id="number_of_items">
+                    <label for="number_of_items">Number of items</label>
+                </div>
+                <button class="btn" onclick="setRandom()">Fill on random</button>
+                <button class="btn" onclick="insertionSort()">Sort</button>
+            </div>
+        </div>
+    </div>
+    <script src="VisualizationOfSortingAlgorithms.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #fafafa;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    padding: 50px 0 0 0;
+    height: 400px;
+}
+
+.items div { 
+    /* position: absolute; */
+    height: 100%;
+    width: 40px;
+    padding: 1% 0 1% 0;
+    background: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.button-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
