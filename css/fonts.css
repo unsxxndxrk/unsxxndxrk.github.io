@@ -1,0 +1,70 @@
+/* * * * * * * * * * * * * *
+ * 						   *
+ *  Privilege Fonts Setup  *
+ *                         *
+ * * * * * * * * * * * * * */
+/* -------------- Audrey -------------- */
+/* Audrey Bold */
+@font-face {
+  font-family: 'Audrey';
+  src: url("../fonts/Audrey/audrey-bold-webfont.eot"), url("../fonts/Audrey/audrey-bold-webfont.woff2") format("woff2"), url("../fonts/Audrey/audrey-bold-webfont.woff") format("woff"), url("../fonts/Audrey/audrey-bold-webfont.ttf") format("truetype"), url("../fonts/Audrey/audrey-bold-webfont.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Audrey Medium */
+@font-face {
+  font-family: 'Audrey';
+  src: url("../fonts/Audrey/audrey-medium-webfont.eot"), url("../fonts/Audrey/audrey-medium-webfont.woff2") format("woff2"), url("../fonts/Audrey/audrey-medium-webfont.woff") format("woff"), url("../fonts/Audrey/audrey-medium-webfont.ttf") format("truetype"), url("../fonts/Audrey/audrey-medium-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Audrey Normal */
+@font-face {
+  font-family: 'Audrey';
+  src: url("../fonts/Audrey/audrey-normal-webfont.eot"), url("../fonts/Audrey/audrey-normal-webfont.woff2") format("woff2"), url("../fonts/Audrey/audrey-normal-webfont.woff") format("woff"), url("../fonts/Audrey/audrey-normal-webfont.ttf") format("truetype"), url("../fonts/Audrey/audrey-normal-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -------------- Lato -------------- */
+/* Lato Black */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-black-webfont.eot"), url("../fonts/Lato/lato-black-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-black-webfont.woff") format("woff"), url("../fonts/Lato/lato-black-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-black-webfont.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Lato Bold */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-bold-webfont.eot"), url("../fonts/Lato/lato-bold-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-bold-webfont.woff") format("woff"), url("../fonts/Lato/lato-bold-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-bold-webfont.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Lato Regular */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-regular-webfont.eot"), url("../fonts/Lato/lato-regular-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-regular-webfont.woff") format("woff"), url("../fonts/Lato/lato-regular-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-regular-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Lato Light */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-light-webfont.eot"), url("../fonts/Lato/lato-light-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-light-webfont.woff") format("woff"), url("../fonts/Lato/lato-light-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-light-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Lato Hairline */
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-hairline-webfont.eot"), url("../fonts/Lato/lato-hairline-webfont.woff2") format("woff2"), url("../fonts/Lato/lato-hairline-webfont.woff") format("woff"), url("../fonts/Lato/lato-hairline-webfont.ttf") format("truetype"), url("../fonts/Lato/lato-hairline-webfont.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
