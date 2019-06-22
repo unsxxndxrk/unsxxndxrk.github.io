@@ -1,1 +1,0 @@
-$(function(){$(window).scroll(function(){$(this).scrollTop()>100?$("#to_top").addClass("to-top_active"):$("#to_top").removeClass("to-top_active")})});

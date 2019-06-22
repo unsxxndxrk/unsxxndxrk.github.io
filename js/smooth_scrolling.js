@@ -1,1 +1,0 @@
-$(function(){$(".go_to").click(function(){var t=$($(this).attr("data-target")).offset().top;return $("html,body").animate({scrollTop:t},500),!1})});
