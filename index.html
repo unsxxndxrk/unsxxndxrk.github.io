@@ -94,11 +94,6 @@
 						<area title="Житомирська" onmouseover="toggleRegion(this)" class="region-area" data-reg="Zhytomyr" shape="POLY" coords="203,38,201,48,205,54,203,58,208,68,203,76,209,87,209,101,203,106,202,112,191,114,191,109,187,104,180,107,153,106,148,98,152,84,146,85,143,77,144,52,152,36,173,27,186,33,195,30">
 					</map>
 				</div>
-				<div class="desc">
-					<div class="desc-wrapper">
-						<h2 id="region_name"></h2>
-					</div>
-				</div>
 			</div>
 
 			<!--  -->
@@ -121,14 +116,6 @@
 			for (let i = 0; i < regions.length; i++) regions[i].style.visibility = 'hidden';
 			activeRegion = null;
 			console.log('clear');
-		}
-
-		for (let i = 0; i < regions.length; i++) {
-			regions[i].addEventListener('click', f)
-		}
-
-		function f() {
-			document.getElementById('region_name').innerHTML = this.getAttribute('title')
 		}
 	</script>
 </body>
