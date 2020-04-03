@@ -1,0 +1,1 @@
+$(function(){$(".profile-history__history-list-item-inner").click(function(){console.log(1),$(this).parent().find(".profile-history__history-list-item-expand").toggleClass("d-none")})});
