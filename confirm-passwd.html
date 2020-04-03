@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Hookah Shop | Подтверждение изменения пароля</title>
+    <meta name="author" content="Author">
+    <meta name="description" content="Hookah Shop">
+    <meta name="keywords" content="Hookah Shop">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/Confirm Passwd/confirm-passwd.css">
+    <link rel="shortcut icon" href="assets/logo.png">
+</head>
+<body>
+    <section id="confirm" class="confirm">
+        <div class="container">
+            <div class="confirm__inner d-flex justify-content-center align-items-center">
+                <div class="confirm__block">
+                    <div class="confirm-text text-center m-auto">
+                        На Ваш электронный адрес был отправлен код
+                        для подтверждения изменения пароля.
+                        Введите его в поле ниже
+                    </div>
+                    <div class="form-holder m-auto">
+                        <form action="" method="POST">
+                            <input required type="text" name="confirm_code" id="confirm_code" placeholder="Код подтверждения" class="d-block">
+                            <button type="submit" name="confirm_passwd" id="confirm_passwd">Подтвердить</button>
+                            <div class="form_alert d-flex justify-content-between align-items-center">
+                                <div class="d-flex icon align-items-center">
+                                    <div class="circle d-flex justify-content-center align-items-center">
+                                        <div>!</div>
+                                    </div>
+                                </div>
+                                <div class="text text-left">
+                                    Неверный код подтверждения
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Scripts -->
+<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/Confirm Passwd/confirm-passwd.js"></script>
+</body>
+</html>
