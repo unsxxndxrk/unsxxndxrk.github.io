@@ -14,6 +14,19 @@
     <link rel="shortcut icon" href="assets/logo.png">
 </head>
 <body>
+    <div class="added-to-cart fixed d-none" id="added_to_cart">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="added-to-cart__inner">
+                <div class="text text-center upper">
+                    Товар был добавлен в корзину
+                </div>
+                <div class="buttons">
+                    <a href="cart.html" class="d-block btn-dark text-center">Перейти в корзину</a>
+                    <button class="added-to-cart__close-popup btn-dark">Продолжить покупки</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="mobile-filter fixed d-none" id="mobile_filter">
         <div class="container">
             <div class="mobile-filter__inner">
@@ -398,7 +411,7 @@
                                     <b>5000 грн.</b>
                                 </div>
                                 <div class="product__data-info-main-buy-btn">
-                                    <button class="d-flex">
+                                    <button class="d-flex buy_button">
                                         <div>
                                             Купить
                                         </div>
