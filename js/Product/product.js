@@ -1,1 +1,0 @@
-$(function(){$(".product__image").slick({slidesToShow:1,slidesToScroll:1,autoplay:!1,dots:!0,arrows:!1})});
